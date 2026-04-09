@@ -1,34 +1,40 @@
-/* === CLS Bishkek Prep — Warm + Encouraging === */
+/* === CLS Bishkek Prep — Golden Hour === */
 
 :root {
-  --color-primary: #2d3748;
-  --color-accent: #e8725a;
-  --color-success: #48bb78;
-  --color-bg: #faf8f5;
+  --color-primary: #d97706;
+  --color-accent: #e05a3a;
+  --color-accent-soft: #fef0e6;
+  --color-success: #16a34a;
+  --color-bg: #fffbf5;
   --color-surface: #ffffff;
-  --color-text: #2d3748;
-  --color-text-muted: #718096;
-  --color-border: #e2e8f0;
-  --color-highlight: #fff5f2;
-  --radius: 12px;
-  --radius-sm: 8px;
-  --shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
-  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.1);
+  --color-text: #3d2c1e;
+  --color-text-muted: #8b7355;
+  --color-border: #e8dfd3;
+  --color-highlight: #fff3e0;
+  --color-primary-soft: #fef9ef;
+  --radius: 14px;
+  --radius-sm: 10px;
+  --shadow: 0 1px 3px rgba(61, 44, 30, 0.06), 0 1px 2px rgba(61, 44, 30, 0.04);
+  --shadow-md: 0 4px 14px rgba(61, 44, 30, 0.08), 0 2px 6px rgba(61, 44, 30, 0.04);
   --transition: 0.2s ease;
   --safe-bottom: env(safe-area-inset-bottom, 0px);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --color-primary: #e2e8f0;
-    --color-bg: #1a202c;
-    --color-surface: #2d3748;
-    --color-text: #e2e8f0;
-    --color-text-muted: #a0aec0;
-    --color-border: #4a5568;
-    --color-highlight: #2d3748;
+    --color-primary: #fbbf24;
+    --color-accent: #f07858;
+    --color-accent-soft: #3a2520;
+    --color-success: #34d399;
+    --color-bg: #1c1512;
+    --color-surface: #2a211a;
+    --color-text: #f5ece0;
+    --color-text-muted: #b8a68e;
+    --color-border: #3d3228;
+    --color-highlight: #332820;
+    --color-primary-soft: #2e2418;
     --shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
-    --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.4);
+    --shadow-md: 0 4px 14px rgba(0, 0, 0, 0.35);
   }
 }
 
@@ -85,7 +91,7 @@ body {
   border-top: 1px solid var(--color-border);
   padding: 8px 0 calc(8px + var(--safe-bottom));
   z-index: 100;
-  box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.06);
+  box-shadow: 0 -2px 12px rgba(61, 44, 30, 0.06);
 }
 
 .nav-tab {
@@ -106,6 +112,8 @@ body {
 
 .nav-tab.active {
   color: var(--color-accent);
+  background: var(--color-accent-soft);
+  border-radius: var(--radius-sm);
 }
 
 .nav-icon {
@@ -125,6 +133,7 @@ body {
   background: var(--color-surface);
   border-radius: var(--radius);
   box-shadow: var(--shadow);
+  border: 1px solid var(--color-border);
   padding: 16px;
   margin-bottom: 12px;
 }
@@ -177,6 +186,11 @@ body {
 
 .section-header:hover {
   background: var(--color-highlight);
+}
+
+.section-card.expanded .section-header {
+  background: var(--color-highlight);
+  border-bottom: 1px solid var(--color-border);
 }
 
 .section-icon {
@@ -244,6 +258,7 @@ body {
 .check-item input[type="checkbox"]:checked {
   background: var(--color-success);
   border-color: var(--color-success);
+  box-shadow: 0 1px 4px rgba(22, 163, 74, 0.3);
 }
 
 .check-item input[type="checkbox"]:checked::after {
@@ -325,6 +340,7 @@ body {
   background: var(--color-accent);
   color: white;
   border-color: var(--color-accent);
+  box-shadow: 0 2px 8px rgba(224, 90, 58, 0.25);
 }
 
 .phrase-card {
@@ -366,11 +382,11 @@ body {
   display: inline-flex;
   align-items: center;
   gap: 6px;
-  padding: 6px 14px;
+  padding: 7px 16px;
   border-radius: 20px;
-  border: 1.5px solid var(--color-accent);
-  background: transparent;
-  color: var(--color-accent);
+  border: 1.5px solid var(--color-primary);
+  background: var(--color-primary-soft);
+  color: var(--color-primary);
   font-size: 13px;
   font-weight: 600;
   cursor: pointer;
@@ -380,12 +396,12 @@ body {
 }
 
 .phrase-play:hover {
-  background: var(--color-accent);
+  background: var(--color-primary);
   color: white;
 }
 
 .phrase-play.speaking {
-  background: var(--color-accent);
+  background: var(--color-primary);
   color: white;
   animation: pulse 1s ease infinite;
 }
@@ -444,7 +460,7 @@ body {
   width: 28px;
   height: 28px;
   border-radius: 50%;
-  background: var(--color-highlight);
+  background: var(--color-accent-soft);
   color: var(--color-accent);
   font-weight: 700;
   font-size: 14px;
@@ -475,7 +491,7 @@ body {
 
 .reveal-takeaway {
   background: var(--color-highlight);
-  border-left: 3px solid var(--color-accent);
+  border-left: 3px solid var(--color-primary);
   padding: 10px 14px;
   border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
   font-size: 14px;
@@ -487,13 +503,17 @@ body {
 
 .home-header {
   text-align: center;
-  padding: 24px 0 16px;
+  padding: 28px 0 16px;
 }
 
 .home-title {
-  font-size: 24px;
+  font-size: 26px;
   font-weight: 800;
   margin-bottom: 6px;
+  background: linear-gradient(135deg, var(--color-primary), var(--color-accent));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 .home-subtitle {
@@ -534,10 +554,11 @@ body {
   background: var(--color-surface);
   border-radius: var(--radius);
   box-shadow: var(--shadow);
-  padding: 16px;
+  border: 1px solid var(--color-border);
+  border-top: 3px solid var(--color-primary);
+  padding: 18px 16px;
   text-align: center;
   cursor: pointer;
-  border: none;
   font-family: inherit;
   color: var(--color-text);
   transition: transform var(--transition), box-shadow var(--transition);
@@ -545,7 +566,7 @@ body {
 }
 
 .quick-link:hover {
-  transform: translateY(-1px);
+  transform: translateY(-2px);
   box-shadow: var(--shadow-md);
 }
 
@@ -599,7 +620,7 @@ body {
 .resource-link-title {
   font-size: 14px;
   font-weight: 600;
-  color: var(--color-accent);
+  color: var(--color-primary);
 }
 
 .resource-link-desc {
@@ -626,9 +647,9 @@ body {
 
 .progress-bar-fill {
   height: 100%;
-  background: var(--color-success);
-  border-radius: 3px;
-  transition: width var(--transition);
+  background: linear-gradient(90deg, var(--color-primary), var(--color-success));
+  border-radius: 4px;
+  transition: width 0.4s ease;
 }
 
 .progress-bar-text {
@@ -662,7 +683,7 @@ body {
   width: 32px;
   height: 32px;
   border-radius: 50%;
-  background: var(--color-accent);
+  background: linear-gradient(135deg, var(--color-primary), var(--color-accent));
   color: white;
   font-size: 13px;
   font-weight: 700;

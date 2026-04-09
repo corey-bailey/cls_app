@@ -12,8 +12,8 @@ export default defineConfig({
         name: 'CLS Bishkek Prep',
         short_name: 'CLS Prep',
         description: 'Prepare for CLS Russian immersion in Bishkek',
-        theme_color: '#2d3748',
-        background_color: '#faf8f5',
+        theme_color: '#d97706',
+        background_color: '#fffbf5',
         display: 'standalone',
         start_url: '/',
         icons: [
