@@ -133,9 +133,9 @@ export const prepSections: readonly Section[] = [
     ],
   },
   {
-    id: 'packing',
-    title: 'Pack Smart',
-    icon: '\u{1F9F3}',
+    id: 'packing-tools',
+    title: 'Learning Tools to Pack',
+    icon: '\u{1F4D3}',
     description: 'Bring what helps learning. Leave what doesn\'t.',
     items: [
       {
@@ -160,18 +160,126 @@ export const prepSections: readonly Section[] = [
       },
       {
         id: 'pack-5',
-        label: 'Sunscreen + layers',
-        detail: 'Bishkek summers: hot days (90\u00B0F+), cool evenings. The sun is strong at altitude. Bring light layers and good sunscreen.',
+        label: 'Sunscreen (hard to find good SPF locally)',
+        detail: 'Bishkek is at altitude \u2014 the sun is intense. Bring your preferred SPF from home. Good sunscreen is expensive or hard to find there.',
       },
       {
         id: 'pack-6',
-        label: 'Sturdy walking shoes',
-        detail: 'Bishkek sidewalks are uneven. You\'ll walk a lot. Comfortable, sturdy shoes are essential.',
+        label: 'Reusable water bottle with filter',
+        detail: 'Tap water in Bishkek is not safe to drink. A filter bottle saves money vs. buying bottled water daily (~$0.75 for 5L).',
       },
       {
         id: 'pack-7',
-        label: 'Water bottle with filter',
-        detail: 'Tap water in Bishkek is not safe to drink. A filter bottle saves money vs. buying bottled water daily (~$0.75 for 5L).',
+        label: 'Packable daypack for weekend trips',
+        detail: 'A lightweight, foldable backpack for Issyk-Kul trips, mountain hikes, and bazaar runs. You\'ll use it every weekend.',
+      },
+    ],
+  },
+  {
+    id: 'packing-clothes',
+    title: 'Clothing Pack List',
+    icon: '\u{1F45A}',
+    description: 'Bishkek summers are hot days, cool evenings. Pack light \u2014 bazaars sell cheap clothes if you forget something.',
+    items: [
+      {
+        id: 'cloth-1',
+        label: 'Lightweight t-shirts and blouses (6\u20138)',
+        detail: 'Mix of short and longer sleeves. Linen or cotton breathe best in the heat. Include a couple of modest tops with sleeves that cover shoulders \u2014 useful for visiting mosques or traditional areas.',
+      },
+      {
+        id: 'cloth-2',
+        label: 'Lightweight pants or joggers (3\u20134)',
+        detail: 'Your daily go-to for class and exploring. Quick-dry fabrics are ideal for hand-washing.',
+      },
+      {
+        id: 'cloth-3',
+        label: 'Longer skirts or midi dresses (2\u20133)',
+        detail: 'Useful for cultural sites, day trips to rural or southern regions, and blending in. Doubles as easy "look put together" outfits for program events or dinners.',
+      },
+      {
+        id: 'cloth-4',
+        label: 'Shorts (2\u20133 pairs)',
+        detail: 'Shorts are fine in Bishkek proper \u2014 it\'s a fairly cosmopolitan city. But having longer options is smart for day trips to rural areas.',
+      },
+      {
+        id: 'cloth-5',
+        label: 'Light jacket or hoodie for evenings',
+        detail: 'Bishkek evenings cool down significantly. A hoodie or light jacket is essential for walking home from dinner.',
+      },
+      {
+        id: 'cloth-6',
+        label: 'Warmer mid-layer (fleece or light down)',
+        detail: 'Essential if you plan any mountain excursions \u2014 it gets genuinely cold at elevation. Worth the pack space even if it seems like overkill.',
+      },
+      {
+        id: 'cloth-7',
+        label: 'Rain jacket or windbreaker',
+        detail: 'Packs small, useful for sudden mountain weather changes and cooler evenings. A packable one weighs almost nothing.',
+      },
+      {
+        id: 'cloth-8',
+        label: 'Hiking pants or leggings + moisture-wicking shirts',
+        detail: 'The mountains around Bishkek are incredible \u2014 you\'ll want to hike. Athletic leggings and breathable tops are perfect.',
+      },
+      {
+        id: 'cloth-9',
+        label: 'Broken-in hiking boots or sturdy trail shoes',
+        detail: 'Do NOT bring brand-new boots. Break them in before departure. Trails near Bishkek range from easy to rugged.',
+      },
+      {
+        id: 'cloth-10',
+        label: 'Comfortable walking shoes (sneakers)',
+        detail: 'Your daily shoes. Bishkek sidewalks are uneven. You\'ll walk a lot \u2014 invest in comfort.',
+      },
+      {
+        id: 'cloth-11',
+        label: 'Sandals for daily wear',
+        detail: 'Breathable for hot days. Good for around the house and casual outings.',
+      },
+      {
+        id: 'cloth-12',
+        label: 'Flip-flops for showers and banya visits',
+        detail: 'Essential for hostel showers, banyas (Russian bathhouses), and Issyk-Kul beach trips.',
+      },
+      {
+        id: 'cloth-13',
+        label: 'Swimwear + coverup',
+        detail: 'Issyk-Kul (the big lake) is a common weekend trip and there are also banyas. A one-piece or bikini with a coverup works \u2014 have a modest option for mixed settings.',
+      },
+      {
+        id: 'cloth-14',
+        label: 'Underwear for ~10 days + sports bras',
+        detail: 'Laundry is usually hand-wash or inexpensive local laundromats. 10 days of underwear means you only do laundry once a week comfortably.',
+      },
+      {
+        id: 'cloth-15',
+        label: 'Socks (athletic + lightweight everyday)',
+        detail: 'Bring both athletic socks for hiking and lightweight ones for daily wear. More socks than you think \u2014 they\'re the first thing to run out.',
+      },
+      {
+        id: 'cloth-16',
+        label: 'Pajamas / sleepwear',
+        detail: 'You\'re living with a host family \u2014 bring something you\'re comfortable being seen in around the house.',
+      },
+      {
+        id: 'cloth-17',
+        label: 'Sun hat or baseball cap',
+        detail: 'The sun at Bishkek\'s altitude is intense. A hat is not optional \u2014 it\'s essential for daily life and especially for day trips.',
+      },
+      {
+        id: 'cloth-18',
+        label: 'Sunglasses',
+        detail: 'UV is strong at elevation. Bring a pair you won\'t lose \u2014 you\'ll wear them every day.',
+      },
+      {
+        id: 'cloth-19',
+        label: 'Light scarf or shawl',
+        detail: 'Doubles as a head covering for mosque visits, sun protection, a blanket on buses, and a fashion accessory. The most versatile item you\'ll pack.',
+      },
+      {
+        id: 'cloth-20',
+        label: 'Small crossbody bag for daily use',
+        detail: 'Keeps your phone, wallet, and keys secure while navigating marshrutkas and bazaars. Easier than a backpack for daily errands.',
       },
     ],
   },
