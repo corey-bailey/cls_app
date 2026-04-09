@@ -1,9 +1,10 @@
 import { navigate } from '../router.ts';
 import { renderProgressRing } from '../components/progress-bar.ts';
-import { getProgress, getRevealProgress } from '../storage.ts';
+import { getProgress, getRevealProgress, getTheme, setTheme } from '../storage.ts';
 import { getAllCheckItemIds } from '../data/sections.ts';
 import { getAllRevealCardIds } from '../data/mindset.ts';
 import { getAllDailyTaskIds } from '../data/daily-plan.ts';
+import type { ThemeName } from '../data/types.ts';
 
 export function renderHome(container: HTMLElement): void {
   // Header
@@ -85,4 +86,50 @@ export function renderHome(container: HTMLElement): void {
     </div>
   `;
   container.appendChild(quote);
+
+  // Theme switcher
+  renderThemeSwitcher(container);
+}
+
+function renderThemeSwitcher(container: HTMLElement): void {
+  const currentTheme = getTheme();
+
+  const wrapper = document.createElement('div');
+  wrapper.className = 'mt-md';
+  wrapper.innerHTML = `
+    <div style="font-size: 13px; font-weight: 700; color: var(--color-text-muted); margin-bottom: 8px;">Theme</div>
+  `;
+
+  const switcher = document.createElement('div');
+  switcher.className = 'theme-switcher';
+
+  const themes: { id: ThemeName; label: string; desc: string; swatchClass: string }[] = [
+    { id: 'golden-hour', label: 'Golden Hour', desc: 'Amber warmth', swatchClass: 'theme-swatch-golden' },
+    { id: 'alpine-meadow', label: 'Alpine Meadow', desc: 'Sage calm', swatchClass: 'theme-swatch-sage' },
+  ];
+
+  for (const theme of themes) {
+    const btn = document.createElement('button');
+    btn.className = `theme-option${currentTheme === theme.id ? ' active' : ''}`;
+    btn.innerHTML = `
+      <div class="theme-swatch ${theme.swatchClass}"></div>
+      <div>
+        <div class="theme-option-label">${theme.label}</div>
+        <div class="theme-option-desc">${theme.desc}</div>
+      </div>
+    `;
+
+    btn.addEventListener('click', () => {
+      setTheme(theme.id);
+      for (const b of switcher.querySelectorAll('.theme-option')) {
+        b.classList.remove('active');
+      }
+      btn.classList.add('active');
+    });
+
+    switcher.appendChild(btn);
+  }
+
+  wrapper.appendChild(switcher);
+  container.appendChild(wrapper);
 }

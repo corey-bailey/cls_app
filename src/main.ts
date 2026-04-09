@@ -2,6 +2,7 @@ import './style.css';
 import { registerRoute, initRouter } from './router.ts';
 import { renderNav } from './components/nav.ts';
 import { initTTS } from './tts.ts';
+import { getTheme, applyTheme } from './storage.ts';
 import { renderHome } from './pages/home.ts';
 import { renderPrep } from './pages/prep.ts';
 import { renderPhrases } from './pages/phrases.ts';
@@ -9,6 +10,9 @@ import { renderMindset } from './pages/mindset.ts';
 import { renderDailyPlanPage } from './pages/daily-plan.ts';
 
 const app = document.getElementById('app')!;
+
+// Apply saved theme immediately
+applyTheme(getTheme());
 
 // Create content container
 const content = document.createElement('main');

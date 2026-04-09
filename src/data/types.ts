@@ -83,9 +83,12 @@ export interface WeekPlan {
   readonly days: readonly DayPlan[];
 }
 
+export type ThemeName = 'golden-hour' | 'alpine-meadow';
+
 export interface AppState {
   checked: Record<string, boolean>;
   revealed: Record<string, boolean>;
   lastVisited: string;
+  theme: ThemeName;
   version: number;
 }

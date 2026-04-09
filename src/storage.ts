@@ -1,14 +1,26 @@
-import type { AppState } from './data/types.ts';
+import type { AppState, ThemeName } from './data/types.ts';
 
 const STORAGE_KEY = 'cls_app_state';
-const CURRENT_VERSION = 1;
+const CURRENT_VERSION = 2;
 
 function defaultState(): AppState {
   return {
     checked: {},
     revealed: {},
     lastVisited: 'home',
+    theme: 'golden-hour',
     version: CURRENT_VERSION,
+  };
+}
+
+function migrateState(parsed: Record<string, unknown>): AppState {
+  const base = defaultState();
+  return {
+    ...base,
+    checked: (parsed.checked as Record<string, boolean>) ?? {},
+    revealed: (parsed.revealed as Record<string, boolean>) ?? {},
+    lastVisited: (parsed.lastVisited as string) ?? 'home',
+    theme: (parsed.theme as ThemeName) ?? 'golden-hour',
   };
 }
 
@@ -16,9 +28,13 @@ export function getState(): AppState {
   try {
     const raw = localStorage.getItem(STORAGE_KEY);
     if (!raw) return defaultState();
-    const parsed = JSON.parse(raw) as AppState;
-    if (parsed.version !== CURRENT_VERSION) return defaultState();
-    return parsed;
+    const parsed = JSON.parse(raw) as Record<string, unknown>;
+    if (parsed.version !== CURRENT_VERSION) {
+      const migrated = migrateState(parsed);
+      saveState(migrated);
+      return migrated;
+    }
+    return parsed as unknown as AppState;
   } catch {
     return defaultState();
   }
@@ -73,4 +89,18 @@ export function getRevealProgress(cardIds: readonly string[]): { done: number; t
   const state = getState();
   const done = cardIds.filter((id) => state.revealed[id] === true).length;
   return { done, total: cardIds.length };
+}
+
+export function getTheme(): ThemeName {
+  return getState().theme;
+}
+
+export function setTheme(theme: ThemeName): void {
+  const state = getState();
+  saveState({ ...state, theme });
+  applyTheme(theme);
+}
+
+export function applyTheme(theme: ThemeName): void {
+  document.documentElement.setAttribute('data-theme', theme);
 }
