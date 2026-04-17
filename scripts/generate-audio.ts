@@ -16,9 +16,9 @@ async function fileExists(path: string): Promise<boolean> {
 }
 
 async function main(): Promise<void> {
-  const apiKey = process.env.XAI_API_KEY;
+  const apiKey = process.env.GROK_API_KEY ?? process.env.XAI_API_KEY;
   if (!apiKey) {
-    console.error('Error: XAI_API_KEY environment variable is required');
+    console.error('Error: GROK_API_KEY environment variable is required');
     console.error('Get your key at https://console.x.ai/');
     process.exit(1);
   }

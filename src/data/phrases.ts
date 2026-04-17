@@ -119,6 +119,14 @@ export const survivalPhrases: readonly Phrase[] = [
     category: 'homestay',
     context: 'Memorize your specific dietary needs cold before arrival.',
   },
+  {
+    id: 'hom-9',
+    russian: '\u0421\u043F\u0430\u0441\u0438\u0431\u043E \u0431\u043E\u043B\u044C\u0448\u043E\u0435, \u044F \u043D\u0430\u0435\u043B\u0441\u044F/\u043D\u0430\u0435\u043B\u0430\u0441\u044C',
+    translit: 'spa-SEE-ba bal-SHO-yeh, ya na-YEL-sya / na-YE-las',
+    english: 'Thank you so much, I am full (m/f)',
+    category: 'homestay',
+    context: 'Polite way to decline seconds without offending your host. Use the -\u0430\u0441\u044C ending if you\'re female.',
+  },
 
   // === Classroom ===
   {
