@@ -55,6 +55,12 @@ export function renderHome(container: HTMLElement): void {
       route: 'phrases',
     },
     {
+      icon: '\u{1F0CF}',
+      label: 'Flashcards',
+      sub: '1000 common words',
+      route: 'flashcards',
+    },
+    {
       icon: '\u{1F9E0}',
       label: 'Mindset Guide',
       sub: `${revealProgress.done}/${revealProgress.total} explored`,
