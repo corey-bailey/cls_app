@@ -6,6 +6,7 @@ import { getTheme, applyTheme } from './storage.ts';
 import { renderHome } from './pages/home.ts';
 import { renderPrep } from './pages/prep.ts';
 import { renderPhrases } from './pages/phrases.ts';
+import { renderFlashcards } from './pages/flashcards.ts';
 import { renderMindset } from './pages/mindset.ts';
 import { renderDailyPlanPage } from './pages/daily-plan.ts';
 
@@ -24,6 +25,7 @@ registerRoute('home', renderHome);
 registerRoute('plan', renderDailyPlanPage);
 registerRoute('prep', renderPrep);
 registerRoute('phrases', renderPhrases);
+registerRoute('flashcards', renderFlashcards);
 registerRoute('mindset', renderMindset);
 
 // Initialize

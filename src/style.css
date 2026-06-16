@@ -132,6 +132,8 @@ body {
 
 .nav-tab {
   display: flex;
+  flex: 1;
+  min-width: 0;
   flex-direction: column;
   align-items: center;
   gap: 2px;
@@ -139,7 +141,7 @@ body {
   border: none;
   color: var(--color-text-muted);
   cursor: pointer;
-  padding: 4px 12px;
+  padding: 4px 4px;
   border-radius: var(--radius-sm);
   transition: color var(--transition);
   font-family: inherit;
@@ -814,6 +816,291 @@ body {
 .theme-option-desc {
   font-size: 11px;
   color: var(--color-text-muted);
+}
+
+/* === Flashcards === */
+
+.deck-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 10px;
+}
+
+.deck-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  align-items: flex-start;
+  text-align: left;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 14px;
+  cursor: pointer;
+  font-family: inherit;
+  color: var(--color-text);
+  transition: transform var(--transition), box-shadow var(--transition);
+  -webkit-tap-highlight-color: transparent;
+}
+
+.deck-card:active {
+  transform: scale(0.98);
+}
+
+.deck-label {
+  font-size: 16px;
+  font-weight: 800;
+}
+
+.deck-progress {
+  font-size: 12px;
+  color: var(--color-text-muted);
+}
+
+.deck-due-badge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: var(--color-accent);
+  color: white;
+  font-size: 11px;
+  font-weight: 700;
+  padding: 2px 8px;
+  border-radius: 12px;
+}
+
+.deck-done-badge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: var(--color-success);
+  font-size: 16px;
+  font-weight: 800;
+}
+
+.direction-label {
+  align-self: center;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--color-text-muted);
+}
+
+.study-bar {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px 10px;
+  margin-bottom: 16px;
+}
+
+.study-direction {
+  display: flex;
+  gap: 6px;
+  margin-left: auto;
+}
+
+.study-back {
+  background: none;
+  border: none;
+  color: var(--color-accent);
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  font-family: inherit;
+  padding: 4px 0;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.study-deck-label {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--color-text-muted);
+}
+
+.flashcard-counter {
+  text-align: center;
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--color-text-muted);
+  margin-bottom: 10px;
+}
+
+.flashcard {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  min-height: 220px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.flashcard-side {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  text-align: center;
+}
+
+/* A flex/grid display value overrides the UA [hidden] rule, so re-assert it. */
+.flashcard-side[hidden],
+.grade-buttons[hidden] {
+  display: none;
+}
+
+.flashcard-word {
+  font-size: 32px;
+  font-weight: 800;
+  color: var(--color-text);
+  line-height: 1.2;
+}
+
+.flashcard-hint {
+  font-size: 12px;
+  color: var(--color-text-muted);
+}
+
+.flashcard-meta {
+  font-size: 13px;
+  color: var(--color-text-muted);
+  font-weight: 600;
+}
+
+.flashcard-audio {
+  background: var(--color-accent-soft);
+  border: none;
+  color: var(--color-accent);
+  font-size: 18px;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.flashcard-audio.speaking {
+  background: var(--color-accent);
+  color: white;
+}
+
+.grade-buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+  margin-top: 14px;
+}
+
+.grade-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  padding: 10px 4px;
+  border: none;
+  border-radius: var(--radius-sm);
+  color: white;
+  cursor: pointer;
+  font-family: inherit;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.grade-label {
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.grade-interval {
+  font-size: 10px;
+  font-weight: 600;
+  opacity: 0.85;
+}
+
+.grade-again { background: #dc2626; }
+.grade-hard { background: #ea7317; }
+.grade-good { background: var(--color-success); }
+.grade-easy { background: #2563eb; }
+
+.srs-help {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 12px 14px;
+  margin-bottom: 16px;
+}
+
+.srs-help > summary {
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--color-accent);
+  list-style: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.srs-help > summary::before {
+  content: 'ⓘ ';
+}
+
+.srs-help[open] > summary {
+  margin-bottom: 8px;
+}
+
+.srs-help-body {
+  font-size: 13px;
+  line-height: 1.55;
+  color: var(--color-text-muted);
+}
+
+.srs-help-body p {
+  margin: 0 0 8px;
+}
+
+.srs-help-body ul {
+  margin: 0 0 8px;
+  padding-left: 18px;
+}
+
+.srs-help-body li {
+  margin-bottom: 4px;
+}
+
+.srs-help-body strong {
+  color: var(--color-text);
+}
+
+.empty-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+  text-align: center;
+  color: var(--color-text-muted);
+  font-size: 15px;
+  padding: 40px 20px;
+}
+
+.empty-emoji {
+  font-size: 40px;
+}
+
+.study-back-btn {
+  background: var(--color-accent);
+  color: white;
+  border: none;
+  border-radius: var(--radius-sm);
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  font-family: inherit;
 }
 
 /* === Utility === */

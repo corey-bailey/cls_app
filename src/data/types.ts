@@ -83,6 +83,26 @@ export interface WeekPlan {
   readonly days: readonly DayPlan[];
 }
 
+export interface VocabWord {
+  readonly rank: number;
+  readonly russian: string;
+  readonly english: string;
+  readonly pos: string;
+  readonly notes?: string;
+}
+
+export type Direction = 'ru-en' | 'en-ru';
+
+export type Grade = 'again' | 'hard' | 'good' | 'easy';
+
+export interface CardSchedule {
+  readonly ease: number;
+  readonly intervalDays: number;
+  readonly reps: number;
+  readonly lapses: number;
+  readonly due: string; // ISO date (YYYY-MM-DD)
+}
+
 export type ThemeName = 'golden-hour' | 'alpine-meadow';
 
 export interface AppState {

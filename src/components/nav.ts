@@ -11,6 +11,7 @@ const tabs: readonly Tab[] = [
   { id: 'plan', label: '14-Day', icon: '&#128197;' },
   { id: 'prep', label: 'Prep', icon: '&#9745;' },
   { id: 'phrases', label: 'Phrases', icon: '&#128172;' },
+  { id: 'flashcards', label: 'Cards', icon: '&#127183;' },
   { id: 'mindset', label: 'Mindset', icon: '&#129504;' },
 ];
 
