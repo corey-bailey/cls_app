@@ -978,25 +978,29 @@ body {
   flex-direction: column;
   gap: 12px;
   align-items: center;
+  max-width: 100%;
 }
 
 .flashcard-pair-row {
   display: flex;
   align-items: center;
-  gap: 10px;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 6px 10px;
+  max-width: 100%;
 }
 
 .flashcard-pair-form {
-  font-size: 27px;
+  /* Shrinks on narrow phones so long verbs (остана́вливаться) never overflow. */
+  font-size: clamp(19px, 5.6vw, 27px);
   font-weight: 800;
   color: var(--color-text);
   line-height: 1.2;
+  overflow-wrap: anywhere;
 }
 
 .flashcard-pair-label {
   flex: none;
-  width: 92px;
-  text-align: right;
   font-size: 10px;
   font-weight: 700;
   text-transform: uppercase;
