@@ -12,6 +12,34 @@ export interface Deck {
   readonly words: readonly VocabWord[];
 }
 
+/** Strips Cyrillic stress marks (combining diacritics) so accented forms compare equal. */
+function deaccent(s: string): string {
+  return s.normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase();
+}
+
+/**
+ * Collapses each verb aspect pair into a single card. Both halves of a pair
+ * (e.g. де́лать + сде́лать) carry the same resolved {impf, pf}; we keep the
+ * first (lowest-rank) occurrence and drop the duplicate, so the merged card
+ * lives in its more frequent member's deck and keeps a stable rank SRS key.
+ * Non-verbs, single-aspect verbs, and pairs with only one half in the list
+ * pass through untouched.
+ */
+export function mergeAspectPairs(words: readonly VocabWord[]): VocabWord[] {
+  const sorted = [...words].sort((a, b) => a.rank - b.rank);
+  const seen = new Set<string>();
+  const merged: VocabWord[] = [];
+  for (const word of sorted) {
+    if (word.impf && word.pf) {
+      const key = `${deaccent(word.impf)}|${deaccent(word.pf)}`;
+      if (seen.has(key)) continue;
+      seen.add(key);
+    }
+    merged.push(word);
+  }
+  return merged;
+}
+
 export function buildDecks(words: readonly VocabWord[]): Deck[] {
   const sorted = [...words].sort((a, b) => a.rank - b.rank);
   const decks: Deck[] = [];

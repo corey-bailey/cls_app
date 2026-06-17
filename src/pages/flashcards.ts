@@ -1,5 +1,5 @@
 import type { Deck } from '../data/decks.ts';
-import { buildDecks } from '../data/decks.ts';
+import { buildDecks, mergeAspectPairs } from '../data/decks.ts';
 import type { Direction, Grade, VocabWord } from '../data/types.ts';
 import { renderFlashcard } from '../components/flashcard.ts';
 import {
@@ -26,7 +26,7 @@ async function loadDecks(): Promise<Deck[]> {
   const res = await fetch(VOCAB_URL);
   if (!res.ok) throw new Error(`Failed to load vocab: ${res.status}`);
   const words = (await res.json()) as VocabWord[];
-  cachedDecks = buildDecks(words);
+  cachedDecks = buildDecks(mergeAspectPairs(words));
   return cachedDecks;
 }
 

@@ -35,11 +35,49 @@ function expandNotes(notes: string): string {
     .join(' ');
 }
 
+/** A verb card that shows both aspect forms together. */
+function isAspectPair(word: VocabWord): boolean {
+  return Boolean(word.impf && word.pf);
+}
+
 /** Builds the back-of-card metadata line (POS + spelled-out aspect/gender note). */
 function metaLine(word: VocabWord): string {
-  const note = word.notes ? expandNotes(word.notes) : '';
+  const note = isAspectPair(word) ? 'aspect pair' : word.notes ? expandNotes(word.notes) : '';
   const parts = [word.pos, note].filter(Boolean);
   return parts.map((p) => escapeHtml(p as string)).join(' · ');
+}
+
+/** A round audio button that speaks `text` (wired up after render). */
+function audioButton(text: string): string {
+  if (!hasTTSSupport()) return '';
+  return `<button class="flashcard-audio" data-speak="${escapeHtml(text)}" aria-label="Listen">▶</button>`;
+}
+
+/**
+ * The Russian face of the card. Aspect-pair verbs show both forms with
+ * imperfective/perfective labels and a per-form audio button; everything else
+ * shows the single word. Used on the prompt side for ru→en and the answer side
+ * for en→ru, so the audio always rides along with the Russian.
+ */
+function russianBlock(word: VocabWord): string {
+  if (isAspectPair(word)) {
+    const row = (label: string, form: string): string => `
+      <div class="flashcard-pair-row">
+        <span class="flashcard-pair-label">${label}</span>
+        <span class="flashcard-pair-form">${escapeHtml(form)}</span>
+        ${audioButton(form)}
+      </div>`;
+    return `<div class="flashcard-pair">
+      ${row('imperfective', word.impf!)}
+      ${row('perfective', word.pf!)}
+    </div>`;
+  }
+  return `<div class="flashcard-word">${escapeHtml(word.russian)}</div>${audioButton(word.russian)}`;
+}
+
+/** The English face of the card. */
+function englishBlock(word: VocabWord): string {
+  return `<div class="flashcard-word">${escapeHtml(word.english)}</div>`;
 }
 
 /** Human-readable "when you'll next see this card" label for a grade button. */
@@ -62,9 +100,6 @@ export function renderFlashcard(container: HTMLElement, opts: FlashcardOptions):
   stopSpeaking();
 
   const promptRussian = direction === 'ru-en';
-  const promptText = promptRussian ? word.russian : word.english;
-  const answerText = promptRussian ? word.english : word.russian;
-  const russianText = word.russian;
 
   const wrap = document.createElement('div');
   wrap.className = 'flashcard-wrap';
@@ -73,15 +108,12 @@ export function renderFlashcard(container: HTMLElement, opts: FlashcardOptions):
     <div class="flashcard-counter">${remaining} left</div>
     <div class="flashcard" role="button" tabindex="0" aria-label="Show answer">
       <div class="flashcard-side flashcard-prompt">
-        <div class="flashcard-word">${escapeHtml(promptText)}</div>
-        ${promptRussian && hasTTSSupport() ? `<button class="flashcard-audio" aria-label="Listen">▶</button>` : ''}
+        ${promptRussian ? russianBlock(word) : englishBlock(word)}
         <div class="flashcard-hint">Tap to reveal</div>
       </div>
       <div class="flashcard-side flashcard-answer" hidden>
-        <div class="flashcard-word">${escapeHtml(answerText)}</div>
-        ${!promptRussian && hasTTSSupport() ? `<button class="flashcard-audio" aria-label="Listen">▶</button>` : ''}
+        ${promptRussian ? englishBlock(word) : russianBlock(word)}
         <div class="flashcard-meta">${metaLine(word)}</div>
-        ${word.pair ? `<div class="flashcard-pair"><span class="flashcard-pair-label">aspect pair</span> ${escapeHtml(word.pair)}</div>` : ''}
         <div class="flashcard-footer">#${word.rank} most common</div>
       </div>
     </div>
@@ -99,19 +131,19 @@ export function renderFlashcard(container: HTMLElement, opts: FlashcardOptions):
   const grades = wrap.querySelector<HTMLElement>('.grade-buttons')!;
   let flipped = false;
 
-  function playRussian(btn: HTMLElement | null): void {
-    speak(russianText, undefined, {
+  function playText(text: string, btn: HTMLElement | null): void {
+    speak(text, undefined, {
       onStart: () => btn?.classList.add('speaking'),
       onEnd: () => btn?.classList.remove('speaking'),
     });
   }
 
   function wireAudio(side: HTMLElement): void {
-    const btn = side.querySelector<HTMLButtonElement>('.flashcard-audio');
-    if (!btn) return;
-    btn.addEventListener('click', (e) => {
-      e.stopPropagation();
-      playRussian(btn);
+    side.querySelectorAll<HTMLButtonElement>('.flashcard-audio').forEach((btn) => {
+      btn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        playText(btn.dataset.speak ?? '', btn);
+      });
     });
   }
   wireAudio(promptSide);
@@ -124,9 +156,11 @@ export function renderFlashcard(container: HTMLElement, opts: FlashcardOptions):
     answerSide.hidden = false;
     grades.hidden = false;
     card.setAttribute('aria-label', 'Card revealed');
-    // Auto-play the Russian audio when it lands on the answer side.
+    // Auto-play the Russian audio when it lands on the answer side. For an
+    // aspect pair this is the imperfective (first) form.
     if (!promptRussian && hasTTSSupport()) {
-      playRussian(answerSide.querySelector<HTMLButtonElement>('.flashcard-audio'));
+      const btn = answerSide.querySelector<HTMLButtonElement>('.flashcard-audio');
+      if (btn) playText(btn.dataset.speak ?? '', btn);
     }
   }
 

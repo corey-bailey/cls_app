@@ -91,6 +91,12 @@ export interface VocabWord {
   readonly notes?: string;
   /** Aspectual partner verb, e.g. "говори́ть (impf)". Empty for non-verbs. */
   readonly pair?: string;
+  /** This verb's own aspect, derived from `notes` at build time. */
+  readonly aspect?: 'impf' | 'pf' | 'biasp';
+  /** Imperfective form of the aspect pair (this verb or its partner). */
+  readonly impf?: string;
+  /** Perfective form of the aspect pair (this verb or its partner). */
+  readonly pf?: string;
 }
 
 export type Direction = 'ru-en' | 'en-ru';
