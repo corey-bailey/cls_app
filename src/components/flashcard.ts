@@ -22,9 +22,23 @@ function escapeHtml(text: string): string {
   return div.innerHTML;
 }
 
-/** Builds the back-of-card metadata line (POS + aspect/gender note + rank). */
+/** Spells out verb aspect for display; leaves gender / other notes untouched. */
+function expandNotes(notes: string): string {
+  return notes
+    .split(/\s+/)
+    .map((tok) => {
+      if (tok === 'impf') return 'imperfective';
+      if (tok === 'pf') return 'perfective';
+      if (tok === 'biasp') return 'biaspectual';
+      return tok;
+    })
+    .join(' ');
+}
+
+/** Builds the back-of-card metadata line (POS + spelled-out aspect/gender note). */
 function metaLine(word: VocabWord): string {
-  const parts = [word.pos, word.notes, `rank #${word.rank}`].filter(Boolean);
+  const note = word.notes ? expandNotes(word.notes) : '';
+  const parts = [word.pos, note].filter(Boolean);
   return parts.map((p) => escapeHtml(p as string)).join(' · ');
 }
 
@@ -67,6 +81,8 @@ export function renderFlashcard(container: HTMLElement, opts: FlashcardOptions):
         <div class="flashcard-word">${escapeHtml(answerText)}</div>
         ${!promptRussian && hasTTSSupport() ? `<button class="flashcard-audio" aria-label="Listen">▶</button>` : ''}
         <div class="flashcard-meta">${metaLine(word)}</div>
+        ${word.pair ? `<div class="flashcard-pair"><span class="flashcard-pair-label">aspect pair</span> ${escapeHtml(word.pair)}</div>` : ''}
+        <div class="flashcard-footer">#${word.rank} most common</div>
       </div>
     </div>
     <div class="grade-buttons" hidden>

@@ -2,8 +2,8 @@
 /**
  * Build the runtime vocab JSON from the frequency TSV.
  *
- * Reads `russian-1000-frequency.tsv` (Rank, Russian, English, POS, Notes) and
- * writes `public/data/russian-1000.json` as a plain array of VocabWord objects.
+ * Reads `russian-1000-frequency.tsv` (Rank, Russian, English, POS, Notes, Pair)
+ * and writes `public/data/russian-1000.json` as a plain array of VocabWord objects.
  * The JSON is committed and is the source of truth at runtime; re-run this only
  * when the TSV changes. Mirrors build_deck.py's column handling.
  */
@@ -17,6 +17,7 @@ interface VocabWord {
   readonly english: string;
   readonly pos: string;
   readonly notes?: string;
+  readonly pair?: string;
 }
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), '..');
@@ -38,6 +39,7 @@ function parseTsv(raw: string): VocabWord[] {
     const english = (cols[2] ?? '').trim();
     const pos = (cols[3] ?? '').trim();
     const notes = (cols[4] ?? '').trim();
+    const pair = (cols[5] ?? '').trim();
 
     if (!Number.isFinite(rank) || !russian) {
       throw new Error(`Malformed row ${i + 1}: ${lines[i]}`);
@@ -49,6 +51,7 @@ function parseTsv(raw: string): VocabWord[] {
       english,
       pos,
       ...(notes ? { notes } : {}),
+      ...(pair ? { pair } : {}),
     });
   }
   return words;

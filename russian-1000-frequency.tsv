@@ -1,1001 +1,1001 @@
-Rank	Russian	English	POS	Notes
-1	и	and	conjunction
-2	в	in / into	preposition
-3	не	not	particle
-4	он	he	pronoun
-5	на	on / onto	preposition
-6	я	I	pronoun
-7	что	what / that	pronoun/conj
-8	тот	that	pronoun
-9	быть	to be	verb	impf
-10	с	with / from	preposition
-11	а	but / and	conjunction
-12	весь	all / whole	pronoun
-13	э́то	this / it	pronoun
-14	как	how / as	adverb/conj
-15	она́	she	pronoun
-16	по	along / by	preposition
-17	но	but	conjunction
-18	они́	they	pronoun
-19	к	to / towards	preposition
-20	у	at / by	preposition
-21	ты	you (sing.)	pronoun
-22	из	from / out of	preposition
-23	мы	we	pronoun
-24	за	behind / for	preposition
-25	вы	you (pl./formal)	pronoun
-26	так	so / thus	adverb
-27	же	(emphatic particle)	particle
-28	от	from	preposition
-29	сказа́ть	to say	verb	pf
-30	э́тот	this	pronoun
-31	кото́рый	which / who	pronoun
-32	мочь	to be able	verb	impf
-33	челове́к	person / man	noun	m
-34	о	about	preposition
-35	како́й	what kind of	pronoun
-36	год	year	noun	m
-37	ещё	still / more	adverb
-38	тако́й	such	pronoun
-39	то	then / that	particle/pron
-40	себя́	oneself	pronoun
-41	оди́н	one	numeral
-42	для	for	preposition
-43	до	until / up to	preposition
-44	знать	to know	verb	impf
-45	мой	my	pronoun
-46	до́лжен	must / obliged	adjective	short adj
-47	э́та	this (f.)	pronoun
-48	стать	to become	verb	pf
-49	е́сли	if	conjunction
-50	ли	whether	particle
-51	сам	oneself / myself	pronoun
-52	когда́	when	adverb/conj
-53	уже́	already	adverb
-54	друго́й	other / another	adjective
-55	нет	no / there is no	particle
-56	говори́ть	to speak / say	verb	impf
-57	наш	our	pronoun
-58	мно́го	much / many	adverb
-59	же́нщина	woman	noun	f
-60	да	yes / and	particle
-61	хоте́ть	to want	verb	impf
-62	ну	well	particle
-63	бы	would (subjunctive)	particle
-64	без	without	preposition
-65	ви́деть	to see	verb	impf
-66	под	under	preposition
-67	про	about	preposition
-68	мо́жно	one may / possible	predicative
-69	врач	doctor	noun	m
-70	вре́мя	time	noun	n
-71	рука́	hand / arm	noun	f
-72	пе́рвый	first	adjective
-73	де́ло	matter / business	noun	n
-74	тут	here	adverb
-75	где	where	adverb
-76	сейча́с	now	adverb
-77	мне	to me	pronoun	dative
-78	раз	time / once	noun	m
-79	два	two	numeral
-80	там	there	adverb
-81	чтобы	in order to	conjunction
-82	глаз	eye	noun	m
-83	жизнь	life	noun	f
-84	день	day	noun	m
-85	тепе́рь	now	adverb
-86	слова́	words	noun	n pl
-87	сло́во	word	noun	n
-88	идти́	to go (on foot)	verb	impf
-89	бо́льше	more / bigger	adverb
-90	по́сле	after	preposition
-91	ваш	your (pl.)	pronoun
-92	си́ла	strength / force	noun	f
-93	коне́ц	end	noun	m
-94	голова́	head	noun	f
-95	хоро́ший	good	adjective
-96	сторона́	side	noun	f
-97	по́мнить	to remember	verb	impf
-98	нога́	leg / foot	noun	f
-99	по́нять	to understand	verb	pf
-100	поду́мать	to think (a bit)	verb	pf
-101	ме́сто	place	noun	n
-102	спроси́ть	to ask	verb	pf
-103	но́вый	new	adjective
-104	жить	to live	verb	impf
-105	рабо́та	work / job	noun	f
-106	зде́сь	here	adverb
-107	дом	house / home	noun	m
-108	взять	to take	verb	pf
-109	нельзя́	one must not	predicative
-110	деньги	money	noun	pl
-111	ро́вно	exactly / evenly	adverb
-112	стоя́ть	to stand	verb	impf
-113	два́жды	twice	adverb
-114	поэ́тому	therefore	adverb
-115	зна́чит	so / means	parenthetical
-116	тысяча	thousand	noun	f
-117	нача́ть	to begin	verb	pf
-118	всегда́	always	adverb
-119	прийти́	to come / arrive	verb	pf
-120	войти́	to enter	verb	pf
-121	каза́ться	to seem	verb	impf
-122	мать	mother	noun	f
-123	имя	name	noun	n
-124	сюда́	here (to here)	adverb
-125	па́мять	memory	noun	f
-126	си́льный	strong	adjective
-127	това́рищ	comrade	noun	m
-128	числа́	numbers / dates	noun	n pl
-129	сде́лать	to do / make	verb	pf
-130	голос	voice	noun	m
-131	всё	everything / all	pronoun
-132	го́род	city	noun	m
-133	вода́	water	noun	f
-134	дава́ть	to give	verb	impf
-135	нача́ло	beginning	noun	n
-136	про́сто	simply	adverb
-137	вопро́с	question	noun	m
-138	земля́	earth / land	noun	f
-139	нос	nose	noun	m
-140	нужно	need to / necessary	predicative
-141	ходи́ть	to walk / go	verb	impf
-142	нача́ться	to begin (intr.)	verb	pf
-143	оте́ц	father	noun	m
-144	поле́зный	useful	adjective
-145	име́ть	to have	verb	impf
-146	тёмный	dark	adjective
-147	мир	world / peace	noun	m
-148	нача́льник	boss / chief	noun	m
-149	по́лный	full	adjective
-150	молодо́й	young	adjective
-151	про́тив	against	preposition
-152	дать	to give	verb	pf
-153	дверь	door	noun	f
-154	рабо́тать	to work	verb	impf
-155	систе́ма	system	noun	f
-156	сиде́ть	to sit	verb	impf
-157	среди́	among	preposition
-158	прийти́сь	to have to	verb	pf
-159	ма́ленький	small	adjective
-160	писа́ть	to write	verb	impf
-161	вдруг	suddenly	adverb
-162	прийти́	to arrive	verb	pf
-163	нача́льный	initial	adjective
-164	выходи́ть	to go out	verb	impf
-165	уви́деть	to see / catch sight	verb	pf
-166	вообще́	in general	adverb
-167	ме́ньше	less	adverb
-168	война́	war	noun	f
-169	сра́зу	at once	adverb
-170	зате́м	then / after that	adverb
-171	улыба́ться	to smile	verb	impf
-172	губа́	lip	noun	f
-173	мы́сль	thought	noun	f
-174	до́лго	for a long time	adverb
-175	власть	power / authority	noun	f
-176	нога́	foot / leg	noun	f
-177	ноль	zero	noun	m
-178	това́р	goods / commodity	noun	m
-179	нужный	necessary	adjective
-180	откры́ть	to open	verb	pf
-181	прийти́сь	to be forced to	verb	pf
-182	сейча́с	right now	adverb
-183	страна́	country	noun	f
-184	уйти́	to leave	verb	pf
-185	неде́ля	week	noun	f
-186	всё-таки	still / nevertheless	adverb
-187	держа́ть	to hold	verb	impf
-188	ма́ло	little / few	adverb
-189	рассказа́ть	to tell / narrate	verb	pf
-190	сле́довать	to follow	verb	impf
-191	тру́дный	difficult	adjective
-192	усло́вие	condition	noun	n
-193	через	through / across	preposition
-194	зре́ние	sight / vision	noun	n
-195	книга	book	noun	f
-196	общий	general / common	adjective
-197	показа́ть	to show	verb	pf
-198	про́сьба	request	noun	f
-199	брат	brother	noun	m
-200	ждать	to wait	verb	impf
-201	зада́ча	task / problem	noun	f
-202	интере́сный	interesting	adjective
-203	каждый	each / every	pronoun
-204	класс	class	noun	m
-205	мину́та	minute	noun	f
-206	наро́д	people / nation	noun	m
-207	нести́	to carry	verb	impf
-208	ночь	night	noun	f
-209	общество	society	noun	n
-210	око́нчить	to finish	verb	pf
-211	особенно	especially	adverb
-212	помо́чь	to help	verb	pf
-213	поря́док	order	noun	m
-214	ра́зный	different / various	adjective
-215	сча́стье	happiness	noun	n
-216	уро́вень	level	noun	m
-217	цель	goal / aim	noun	f
-218	чёрный	black	adjective
-219	читать	to read	verb	impf
-220	дерево	tree	noun	n
-221	достать	to get / obtain	verb	pf
-222	зако́н	law	noun	m
-223	иногда́	sometimes	adverb
-224	край	edge / region	noun	m
-225	кровь	blood	noun	f
-226	лежа́ть	to lie / be lying	verb	impf
-227	ме́тод	method	noun	m
-228	наприме́р	for example	parenthetical
-229	номер	number	noun	m
-230	образ	image / manner	noun	m
-231	па́лец	finger	noun	m
-232	приро́да	nature	noun	f
-233	про́шлый	past / last	adjective
-234	развитие	development	noun	n
-235	результа́т	result	noun	m
-236	свет	light	noun	m
-237	се́рдце	heart	noun	n
-238	сле́дующий	next / following	adjective
-239	слы́шать	to hear	verb	impf
-240	смотре́ть	to look / watch	verb	impf
-241	солнце	sun	noun	n
-242	среда́	environment / Wed.	noun	f
-243	ста́рый	old	adjective
-244	сын	son	noun	m
-245	уче́ный	scientist / learned	noun/adj	m
-246	форма	form / shape	noun	f
-247	хле́б	bread	noun	m
-248	цена́	price	noun	f
-249	часть	part	noun	f
-250	чу́вство	feeling	noun	n
-251	беда́	misfortune	noun	f
-252	бить	to beat / hit	verb	impf
-253	близкий	close / near	adjective
-254	бо́же	God (voc.)	noun	m
-255	бок	side / flank	noun	m
-256	боро́ться	to fight / struggle	verb	impf
-257	бу́дущее	future	noun	n
-258	ва́жный	important	adjective
-259	век	century / age	noun	m
-260	верну́ться	to return	verb	pf
-261	ве́тер	wind	noun	m
-262	взгляд	glance / view	noun	m
-263	вид	view / appearance	noun	m
-264	вмести́ть	to contain / fit	verb	pf
-265	вообрази́ть	to imagine	verb	pf
-266	воро́та	gate	noun	pl
-267	впрочем	however	parenthetical
-268	врага́	enemies	noun	m pl
-269	враг	enemy	noun	m
-270	встать	to stand up	verb	pf
-271	встре́тить	to meet	verb	pf
-272	вы́звать	to call / summon	verb	pf
-273	вы́йти	to go out / exit	verb	pf
-274	вы́расти	to grow up	verb	pf
-275	газе́та	newspaper	noun	f
-276	где-то	somewhere	adverb
-277	герой	hero	noun	m
-278	глубо́кий	deep	adjective
-279	гора́	mountain	noun	f
-280	горе́ть	to burn	verb	impf
-281	горя́чий	hot	adjective
-282	госуда́рство	state	noun	n
-283	гото́вый	ready	adjective
-284	грани́ца	border	noun	f
-285	грудь	chest / breast	noun	f
-286	грязь	dirt / mud	noun	f
-287	даже	even	particle
-288	да́льше	further	adverb
-289	дви́гаться	to move	verb	impf
-290	движение	movement	noun	n
-291	двор	yard / court	noun	m
-292	девочка	girl (child)	noun	f
-293	девушка	young woman	noun	f
-294	действие	action	noun	n
-295	действи́тельно	really / indeed	adverb
-296	делать	to do / make	verb	impf
-297	день́ги	money	noun	pl
-298	держа́ться	to hold on	verb	impf
-299	десяток	ten / dozen	noun	m
-300	детство	childhood	noun	n
-301	длина́	length	noun	f
-302	дли́нный	long	adjective
-303	добрый	kind / good	adjective
-304	дово́льно	rather / enough	adverb
-305	дождь	rain	noun	m
-306	доказа́ть	to prove	verb	pf
-307	до́лжность	position / post	noun	f
-308	доро́га	road	noun	f
-309	дорого́й	expensive / dear	adjective
-310	доста́точно	enough	adverb
-311	дочь	daughter	noun	f
-312	друг	friend	noun	m
-313	дружба	friendship	noun	f
-314	дума	thought / Duma	noun	f
-315	душа́	soul	noun	f
-316	дя́дя	uncle	noun	m
-317	еда́	food	noun	f
-318	единственный	only / sole	adjective
-319	е́здить	to go (by vehicle)	verb	impf
-320	есть	to eat / there is	verb	impf
-321	ещё раз	once more	adverb
-322	жаль	pity / sorry	predicative
-323	ждать	to await	verb	impf
-324	жела́ние	wish / desire	noun	n
-325	жёлтый	yellow	adjective
-326	жена́	wife	noun	f
-327	же́нский	female / women's	adjective
-328	живо́й	alive / living	adjective
-329	живо́тное	animal	noun	n
-330	забо́та	care / concern	noun	f
-331	забы́ть	to forget	verb	pf
-332	зави́сеть	to depend	verb	impf
-333	завод	factory / plant	noun	m
-334	за́втра	tomorrow	adverb
-335	зада́ть	to set / pose	verb	pf
-336	зака́з	order (commercial)	noun	m
-337	закры́ть	to close	verb	pf
-338	замети́ть	to notice	verb	pf
-339	занима́ться	to be occupied with	verb	impf
-340	за́пад	west	noun	m
-341	запи́ска	note	noun	f
-342	зато́	on the other hand	conjunction
-343	зашёл	came in / dropped by	verb	pf
-344	звать	to call / name	verb	impf
-345	звезда́	star	noun	f
-346	звук	sound	noun	m
-347	здание	building	noun	n
-348	здоро́вье	health	noun	n
-349	здра́вствуй	hello	interjection
-350	зелёный	green	adjective
-351	зима́	winter	noun	f
-352	знакомый	familiar / acquaintance	adjective
-353	зна́ние	knowledge	noun	n
-354	значе́ние	meaning / significance	noun	n
-355	золото́й	golden	adjective
-356	зуб	tooth	noun	m
-357	игра́	game	noun	f
-358	игра́ть	to play	verb	impf
-359	идея	idea	noun	f
-360	измени́ть	to change	verb	pf
-361	изуча́ть	to study	verb	impf
-362	имени	of the name	noun	n gen
-363	иначе	otherwise	adverb
-364	интере́с	interest	noun	m
-365	иска́ть	to look for	verb	impf
-366	иску́сство	art	noun	n
-367	испо́льзовать	to use	verb	biasp
-368	исто́рия	history / story	noun	f
-369	каби́нет	office / study	noun	m
-370	казаться	to seem	verb	impf
-371	ка́мень	stone	noun	m
-372	карти́на	picture / painting	noun	f
-373	ка́рта	map / card	noun	f
-374	ка́чество	quality	noun	n
-375	кварти́ра	apartment	noun	f
-376	кино́	cinema / movie	noun	n
-377	класс	classroom / class	noun	m
-378	класть	to put / lay	verb	impf
-379	ключ	key	noun	m
-380	кни́жка	little book	noun	f
-381	количество	quantity	noun	n
-382	команда	team / command	noun	f
-383	ко́мната	room	noun	f
-384	конечно	of course	parenthetical
-385	копейка	kopeck	noun	f
-386	коро́ткий	short	adjective
-387	костюм	suit / costume	noun	m
-388	который	which	pronoun
-389	край	region / edge	noun	m
-390	краси́вый	beautiful	adjective
-391	кра́сный	red	adjective
-392	крепкий	strong / firm	adjective
-393	крик	shout / cry	noun	m
-394	кричать	to shout	verb	impf
-395	кро́ме	except / besides	preposition
-396	круг	circle	noun	m
-397	кругом	around	adverb
-398	кры́ша	roof	noun	f
-399	кто	who	pronoun
-400	кто-то	someone	pronoun
-401	куда́	where to	adverb
-402	кула́к	fist	noun	m
-403	культура	culture	noun	f
-404	купи́ть	to buy	verb	pf
-405	кусо́к	piece	noun	m
-406	ла́дно	all right / okay	particle
-407	лежать	to lie down	verb	impf
-408	лес	forest	noun	m
-409	лёгкий	light / easy	adjective
-410	лет	years (gen. pl.)	noun	n pl
-411	лето	summer	noun	n
-412	лицо́	face / person	noun	n
-413	ли́чный	personal	adjective
-414	лишь	only / merely	particle
-415	лоб	forehead	noun	m
-416	ло́жка	spoon	noun	f
-417	лошадь	horse	noun	f
-418	лу́чший	best	adjective
-419	любить	to love	verb	impf
-420	любо́вь	love	noun	f
-421	любо́й	any	pronoun
-422	лю́ди	people	noun	pl
-423	мальчик	boy	noun	m
-424	маши́на	car / machine	noun	f
-425	медленно	slowly	adverb
-426	между	between	preposition
-427	мелкий	small / fine	adjective
-428	мера	measure	noun	f
-429	мёртвый	dead	adjective
-430	месяц	month	noun	m
-431	милый	dear / nice	adjective
-432	мину́та	minute	noun	f
-433	мир	peace / world	noun	m
-434	млн	million	noun	m
-435	мно́гие	many	pronoun
-436	мо́ре	sea	noun	n
-437	моро́з	frost	noun	m
-438	мост	bridge	noun	m
-439	му́ж	husband	noun	m
-440	му́жчина	man	noun	m
-441	му́зыка	music	noun	f
-442	на́до	must / need to	predicative
-443	надежда	hope	noun	f
-444	наза́д	back / ago	adverb
-445	название	name / title	noun	n
-446	называ́ть	to call / name	verb	impf
-447	наконе́ц	finally	adverb
-448	нале́во	to the left	adverb
-449	написа́ть	to write	verb	pf
-450	направление	direction	noun	n
-451	напра́во	to the right	adverb
-452	например	for instance	parenthetical
-453	наступи́ть	to step / set in	verb	pf
-454	нау́ка	science	noun	f
-455	находи́ть	to find	verb	impf
-456	находи́ться	to be located	verb	impf
-457	нача́ло	start	noun	n
-458	не́бо	sky / heaven	noun	n
-459	неве́домый	unknown	adjective
-460	неда́вно	recently	adverb
-461	нежный	tender / gentle	adjective
-462	некоторый	some / certain	pronoun
-463	нельзя	must not	predicative
-464	немного	a little	adverb
-465	неожиданно	unexpectedly	adverb
-466	несколько	several	pronoun
-467	нести	to carry	verb	impf
-468	нет	no	particle
-469	низкий	low	adjective
-470	никако́й	no / none	pronoun
-471	никогда́	never	adverb
-472	никто́	no one	pronoun
-473	ничего́	nothing	pronoun
-474	но́вость	news	noun	f
-475	нога	leg	noun	f
-476	но́мер	number / hotel room	noun	m
-477	но́рма	norm	noun	f
-478	носи́ть	to wear / carry	verb	impf
-479	ночно́й	night (adj.)	adjective
-480	нра́виться	to please / like	verb	impf
-481	обе́д	lunch / dinner	noun	m
-482	область	region / field	noun	f
-483	обрати́ть	to turn / direct	verb	pf
-484	обы́чно	usually	adverb
-485	обяза́тельно	necessarily	adverb
-486	огонь	fire	noun	m
-487	огро́мный	huge	adjective
-488	одежда	clothing	noun	f
-489	однажды	once / one day	adverb
-490	однако	however	conjunction
-491	око́нчательно	finally / definitively	adverb
-492	окно́	window	noun	n
-493	окружа́ть	to surround	verb	impf
-494	опа́сный	dangerous	adjective
-495	опи́сывать	to describe	verb	impf
-496	определи́ть	to determine	verb	pf
-497	опускать	to lower	verb	impf
-498	опыт	experience / experiment	noun	m
-499	организа́ция	organization	noun	f
-500	оружие	weapon	noun	n
-501	осе́нь	autumn	noun	f
-502	основа́ние	foundation / basis	noun	n
-503	особый	special	adjective
-504	оставаться	to remain	verb	impf
-505	оставить	to leave (behind)	verb	pf
-506	остально́й	the rest	adjective
-507	останови́ться	to stop	verb	pf
-508	острый	sharp	adjective
-509	отвести́	to lead away	verb	pf
-510	отве́т	answer	noun	m
-511	отве́тить	to answer	verb	pf
-512	отдать	to give back	verb	pf
-513	отде́льный	separate	adjective
-514	отец	father	noun	m
-515	открытый	open	adjective
-516	отноше́ние	relation / attitude	noun	n
-517	относиться	to relate / treat	verb	impf
-518	отправить	to send	verb	pf
-519	отсю́да	from here	adverb
-520	отту́да	from there	adverb
-521	официа́льный	official	adjective
-522	о́чередь	queue / turn	noun	f
-523	очень	very	adverb
-524	оши́бка	mistake	noun	f
-525	па́дать	to fall	verb	impf
-526	пара	pair / couple	noun	f
-527	парень	guy / lad	noun	m
-528	партия	party / batch	noun	f
-529	перее́хать	to move / cross	verb	pf
-530	перо́	feather / pen	noun	n
-531	петь	to sing	verb	impf
-532	печа́ль	sorrow	noun	f
-533	пи́сьмо	letter	noun	n
-534	пить	to drink	verb	impf
-535	план	plan	noun	m
-536	плати́ть	to pay	verb	impf
-537	пла́тье	dress	noun	n
-538	плечо́	shoulder	noun	n
-539	плохо́й	bad	adjective
-540	пло́щадь	square / area	noun	f
-541	побе́да	victory	noun	f
-542	поверну́ть	to turn	verb	pf
-543	поведе́ние	behavior	noun	n
-544	повторить	to repeat	verb	pf
-545	погода	weather	noun	f
-546	под	beneath / under	preposition
-547	подними́ть	to lift	verb	pf
-548	подня́ться	to rise	verb	pf
-549	подойти́	to approach	verb	pf
-550	подру́га	(female) friend	noun	f
-551	поезд	train	noun	m
-552	поезжа́й	go (imperative)	verb	pf
-553	пое́хать	to go (by vehicle)	verb	pf
-554	пожа́луйста	please	particle
-555	позвони́ть	to call (phone)	verb	pf
-556	по́здно	late	adverb
-557	познако́миться	to get acquainted	verb	pf
-558	пойти́	to go	verb	pf
-559	пока́	while / bye	conjunction
-560	показа́ться	to seem / appear	verb	pf
-561	поко́й	peace / rest	noun	m
-562	поколе́ние	generation	noun	n
-563	поле	field	noun	n
-564	поле́зно	useful(ly)	adverb
-565	по́лзать	to crawl	verb	impf
-566	поли́тика	politics / policy	noun	f
-567	полага́ть	to suppose	verb	impf
-568	по́лный	complete / full	adjective
-569	положе́ние	situation / position	noun	n
-570	положить	to put / lay	verb	pf
-571	получи́ть	to receive / get	verb	pf
-572	по́льза	benefit / use	noun	f
-573	по́мнить	to recall	verb	impf
-574	помога́ть	to help	verb	impf
-575	по́мощь	help / aid	noun	f
-576	понимать	to understand	verb	impf
-577	поня́тно	clear / understood	predicative
-578	поня́тие	concept / notion	noun	n
-579	попа́сть	to get / hit	verb	pf
-580	по-пре́жнему	as before	adverb
-581	пора́	it is time	predicative
-582	поро́г	threshold	noun	m
-583	посёлок	settlement	noun	m
-584	после́дний	last	adjective
-585	посмотре́ть	to look / watch	verb	pf
-586	по́сле того́ как	after	conjunction
-587	посреди́	in the middle of	preposition
-588	поста́вить	to put / set	verb	pf
-589	постоя́нно	constantly	adverb
-590	поступи́ть	to act / enroll	verb	pf
-591	потерять	to lose	verb	pf
-592	поток	flow / stream	noun	m
-593	потому что	because	conjunction
-594	потом	then / later	adverb
-595	похо́жий	similar	adjective
-596	поэт	poet	noun	m
-597	появи́ться	to appear	verb	pf
-598	пра́вда	truth	noun	f
-599	пра́вило	rule	noun	n
-600	правительство	government	noun	n
-601	пра́во	right / law	noun	n
-602	пра́вый	right (side)	adjective
-603	празд́ник	holiday	noun	m
-604	практически	practically	adverb
-605	предложи́ть	to offer / propose	verb	pf
-606	предмет	object / subject	noun	m
-607	представить	to present / imagine	verb	pf
-608	предприятие	enterprise	noun	n
-609	прежде	before / formerly	adverb
-610	прекра́сный	beautiful / splendid	adjective
-611	преступле́ние	crime	noun	n
-612	прибли́зиться	to draw near	verb	pf
-613	привести́	to bring / lead	verb	pf
-614	привы́чка	habit	noun	f
-615	пригото́вить	to prepare	verb	pf
-616	признать	to acknowledge	verb	pf
-617	прийти	to come	verb	pf
-618	прика́з	order / command	noun	m
-619	приме́р	example	noun	m
-620	принимать	to accept / take	verb	impf
-621	принести́	to bring	verb	pf
-622	принять	to accept	verb	pf
-623	приходи́ть	to come / arrive	verb	impf
-624	причи́на	reason / cause	noun	f
-625	прия́тный	pleasant	adjective
-626	проблема	problem	noun	f
-627	проверить	to check	verb	pf
-628	проводить	to conduct / see off	verb	impf
-629	продолжать	to continue	verb	impf
-630	произведение	work (of art)	noun	n
-631	произво́дство	production	noun	n
-632	произойти́	to happen / occur	verb	pf
-633	пройти́	to pass / go through	verb	pf
-634	просить	to ask / request	verb	impf
-635	просну́ться	to wake up	verb	pf
-636	простой	simple	adjective
-637	пространство	space	noun	n
-638	против	versus / against	preposition
-639	профессор	professor	noun	m
-640	прохо́дить	to pass / go through	verb	impf
-641	процесс	process	noun	m
-642	про́шлое	the past	noun	n
-643	прямо́й	straight / direct	adjective
-644	прямо	straight / directly	adverb
-645	пти́ца	bird	noun	f
-646	пусть	let / may	particle
-647	путь	way / path	noun	m
-648	пыта́ться	to try / attempt	verb	impf
-649	пье́са	play (theater)	noun	f
-650	пятна́дцать	fifteen	numeral
-651	работа	job / work	noun	f
-652	рабо́чий	worker / working	noun/adj	m
-653	ра́вный	equal	adjective
-654	рад	glad	adjective	short adj
-655	ра́ди	for the sake of	preposition
-656	радость	joy	noun	f
-657	раз	once / time	noun	m
-658	развивать	to develop	verb	impf
-659	разве	really? / surely	particle
-660	разговор	conversation	noun	m
-661	разли́чный	various	adjective
-662	размер	size	noun	m
-663	райо́н	district	noun	m
-664	ра́но	early	adverb
-665	ра́ньше	earlier / before	adverb
-666	расска́з	story / tale	noun	m
-667	расти́	to grow	verb	impf
-668	ребёнок	child	noun	m
-669	ребята	guys / kids	noun	pl
-670	река́	river	noun	f
-671	решение	decision / solution	noun	n
-672	реши́ть	to decide / solve	verb	pf
-673	рису́нок	drawing	noun	m
-674	род	kind / genus	noun	m
-675	роди́тель	parent	noun	m
-676	роди́ться	to be born	verb	pf
-677	ро́дина	homeland	noun	f
-678	ро́дной	native / dear	adjective
-679	рожде́ние	birth	noun	n
-680	роль	role	noun	f
-681	рома́н	novel	noun	m
-682	российский	Russian (state)	adjective
-683	рост	growth / height	noun	m
-684	рот	mouth	noun	m
-685	руба́шка	shirt	noun	f
-686	рубль	ruble	noun	m
-687	рука́	hand	noun	f
-688	руководи́тель	leader / head	noun	m
-689	ру́сский	Russian	adjective
-690	ручка	pen / handle	noun	f
-691	рыба	fish	noun	f
-692	ряд	row / series	noun	m
-693	ря́дом	nearby	adverb
-694	сад	garden	noun	m
-695	сади́ться	to sit down	verb	impf
-696	самолёт	airplane	noun	m
-697	самый	the most	pronoun
-698	свежий	fresh	adjective
-699	све́рху	from above	adverb
-700	свобода	freedom	noun	f
-701	свобо́дный	free	adjective
-702	свой	one's own	pronoun
-703	свя́занный	connected	adjective
-704	связь	connection / link	noun	f
-705	сде́лать	to make / do	verb	pf
-706	се́вер	north	noun	m
-707	сегодня	today	adverb
-708	сейчас	now	adverb
-709	секу́нда	second	noun	f
-710	село́	village	noun	n
-711	семья́	family	noun	f
-712	се́рый	gray	adjective
-713	серьёзный	serious	adjective
-714	сестра́	sister	noun	f
-715	сесть	to sit down	verb	pf
-716	сила	force / strength	noun	f
-717	сильно	strongly	adverb
-718	си́ний	dark blue	adjective
-719	сия́ть	to shine	verb	impf
-720	сказать	to say / tell	verb	pf
-721	ско́лько	how much / many	adverb
-722	ско́рый	quick / fast	adjective
-723	сле́довательно	consequently	conjunction
-724	слеза́	tear	noun	f
-725	слишком	too / excessively	adverb
-726	слова́рь	dictionary	noun	m
-727	сложный	complex / difficult	adjective
-728	служба	service	noun	f
-729	слу́чай	case / occasion	noun	m
-730	случи́ться	to happen	verb	pf
-731	слушать	to listen	verb	impf
-732	слышать	to hear	verb	impf
-733	сме́рть	death	noun	f
-734	смех	laughter	noun	m
-735	смея́ться	to laugh	verb	impf
-736	смотре́ть	to watch / look	verb	impf
-737	смочь	to manage / be able	verb	pf
-738	снача́ла	at first	adverb
-739	снег	snow	noun	m
-740	сно́ва	again	adverb
-741	собака	dog	noun	f
-742	собрание	meeting / collection	noun	n
-743	собственный	own	adjective
-744	событие	event	noun	n
-745	сове́т	advice / council	noun	m
-746	советский	Soviet	adjective
-747	современный	modern	adjective
-748	совершенно	completely	adverb
-749	совсе́м	entirely / quite	adverb
-750	согласи́ться	to agree	verb	pf
-751	созда́ть	to create	verb	pf
-752	созна́ние	consciousness	noun	n
-753	сойти́	to descend / go off	verb	pf
-754	солдат	soldier	noun	m
-755	со́лнце	sun	noun	n
-756	сон	dream / sleep	noun	m
-757	сообщить	to report / inform	verb	pf
-758	соста́в	composition	noun	m
-759	состояние	condition / state	noun	n
-760	состоя́ть	to consist	verb	impf
-761	сохрани́ть	to keep / preserve	verb	pf
-762	социа́льный	social	adjective
-763	сочинение	composition / essay	noun	n
-764	спать	to sleep	verb	impf
-765	специа́льный	special	adjective
-766	спина́	back	noun	f
-767	споко́йный	calm	adjective
-768	спор	argument / dispute	noun	m
-769	способ	way / method	noun	m
-770	спрашивать	to ask	verb	impf
-771	среди	amid	preposition
-772	сре́дство	means	noun	n
-773	ста́вить	to put / place	verb	impf
-774	стака́н	glass (cup)	noun	m
-775	станови́ться	to become	verb	impf
-776	ста́нция	station	noun	f
-777	стара́ться	to try hard	verb	impf
-778	стари́к	old man	noun	m
-779	старший	elder / senior	adjective
-780	стать	to become	verb	pf
-781	статья́	article	noun	f
-782	стекло́	glass	noun	n
-783	стена́	wall	noun	f
-784	сте́пень	degree	noun	f
-785	стих	verse / poem	noun	m
-786	сто	hundred	numeral
-787	сто́ить	to cost	verb	impf
-788	стол	table	noun	m
-789	столица	capital	noun	f
-790	столь	so / such	adverb
-791	сто́лько	so much / many	adverb
-792	сторона	side	noun	f
-793	стоя́ть	to be standing	verb	impf
-794	страда́ть	to suffer	verb	impf
-795	страница	page	noun	f
-796	страх	fear	noun	m
-797	стра́шный	terrible	adjective
-798	стрела́	arrow	noun	f
-799	стремиться	to strive	verb	impf
-800	строгий	strict	adjective
-801	строить	to build	verb	impf
-802	строй	system / order	noun	m
-803	струна́	string	noun	f
-804	студент	student	noun	m
-805	стул	chair	noun	m
-806	суд	court / judgment	noun	m
-807	судьба́	fate / destiny	noun	f
-808	су́мка	bag	noun	f
-809	суть	essence	noun	f
-810	существовать	to exist	verb	impf
-811	схвати́ть	to grab	verb	pf
-812	сце́на	scene / stage	noun	f
-813	счастли́вый	happy	adjective
-814	счёт	account / score	noun	m
-815	считать	to count / consider	verb	impf
-816	сын	son	noun	m
-817	сюда	to here	adverb
-818	сюжет	plot	noun	m
-819	таблица	table (chart)	noun	f
-820	тайна	secret / mystery	noun	f
-821	так как	since / because	conjunction
-822	также	also / as well	adverb
-823	танец	dance	noun	m
-824	твёрдый	hard / firm	adjective
-825	твой	your (sing.)	pronoun
-826	театр	theater	noun	m
-827	тёмный	dark	adjective
-828	тем не менее	nevertheless	conjunction
-829	тема	theme / topic	noun	f
-830	тепло́	warmth / warm	noun	n
-831	терять	to lose	verb	impf
-832	течь	to flow	verb	impf
-833	тип	type	noun	m
-834	тихий	quiet	adjective
-835	ти́хо	quietly	adverb
-836	товарищ	comrade	noun	m
-837	тогда́	then / at that time	adverb
-838	тоже	also / too	adverb
-839	толпа́	crowd	noun	f
-840	толстый	thick / fat	adjective
-841	то́лько	only	particle
-842	торговля	trade	noun	f
-843	точка	dot / point	noun	f
-844	точно	exactly / precisely	adverb
-845	трава́	grass	noun	f
-846	тре́бовать	to demand	verb	impf
-847	тре́тий	third	numeral
-848	труд	labor / work	noun	m
-849	тру́дно	difficult(ly)	predicative
-850	туда́	to there	adverb
-851	туман	fog	noun	m
-852	тяжёлый	heavy / hard	adjective
-853	убить	to kill	verb	pf
-854	уве́ренный	confident	adjective
-855	увидеть	to see	verb	pf
-856	угол	corner / angle	noun	m
-857	удар	blow / strike	noun	m
-858	удивиться	to be surprised	verb	pf
-859	удово́льствие	pleasure	noun	n
-860	уезжа́ть	to leave / depart	verb	impf
-861	узнать	to find out / recognize	verb	pf
-862	улица	street	noun	f
-863	улыбка	smile	noun	f
-864	улыбнуться	to smile	verb	pf
-865	ум	mind / intellect	noun	m
-866	уметь	to know how	verb	impf
-867	умереть	to die	verb	pf
-868	умный	clever / smart	adjective
-869	услышать	to hear	verb	pf
-870	успеть	to have time / manage	verb	pf
-871	успех	success	noun	m
-872	устро́ить	to arrange	verb	pf
-873	утро	morning	noun	n
-874	ухо	ear	noun	n
-875	уходи́ть	to leave / go away	verb	impf
-876	участие	participation	noun	n
-877	участок	plot / section	noun	m
-878	учёный	scholar / scientist	noun	m
-879	училище	college / school	noun	n
-880	учитель	teacher	noun	m
-881	учить	to teach / learn	verb	impf
-882	учиться	to study / learn	verb	impf
-883	фабрика	factory	noun	f
-884	факт	fact	noun	m
-885	фамилия	surname	noun	f
-886	фигура	figure	noun	f
-887	фильм	film / movie	noun	m
-888	форма	form	noun	f
-889	фронт	front (mil.)	noun	m
-890	характер	character / temper	noun	m
-891	хвата́ть	to suffice / grab	verb	impf
-892	хи́мия	chemistry	noun	f
-893	хлеб	bread	noun	m
-894	ходи́ть	to go / walk	verb	impf
-895	хозя́ин	owner / host	noun	m
-896	холо́дный	cold	adjective
-897	хоро́ший	good	adjective
-898	хорошо́	well / good	adverb
-899	хоте́ть	to want	verb	impf
-900	хоть	though / even	conjunction
-901	храни́ть	to store / keep	verb	impf
-902	художник	artist	noun	m
-903	худо́жественный	artistic	adjective
-904	царь	tsar	noun	m
-905	цвет	color	noun	m
-906	целый	whole / entire	adjective
-907	цель	aim / goal	noun	f
-908	центр	center	noun	m
-909	це́рковь	church	noun	f
-910	цифра	digit / figure	noun	f
-911	час	hour	noun	m
-912	частый	frequent	adjective
-913	часто	often	adverb
-914	частица	particle	noun	f
-915	человек	person / human	noun	m
-916	через	across / via	preposition
-917	черта́	line / trait	noun	f
-918	чёрный	black	adjective
-919	четверть	quarter	noun	f
-920	число	number / date	noun	n
-921	чи́стый	clean / pure	adjective
-922	член	member	noun	m
-923	что-то	something	pronoun
-924	чтобы	so that	conjunction
-925	чувствовать	to feel	verb	impf
-926	чудо	miracle / wonder	noun	n
-927	чужой	someone else's / alien	adjective
-928	шаг	step	noun	m
-929	шапка	cap / hat	noun	f
-930	широ́кий	wide / broad	adjective
-931	школа	school	noun	f
-932	шум	noise	noun	m
-933	шуметь	to make noise	verb	impf
-934	шутить	to joke	verb	impf
-935	шутка	joke	noun	f
-936	щека́	cheek	noun	f
-937	экза́мен	exam	noun	m
-938	экономика	economy / economics	noun	f
-939	экра́н	screen	noun	m
-940	элемент	element	noun	m
-941	эне́ргия	energy	noun	f
-942	эпо́ха	epoch / era	noun	f
-943	эта́ж	floor / story	noun	m
-944	этот	this	pronoun
-945	юг	south	noun	m
-946	я́блоко	apple	noun	n
-947	явиться	to appear / show up	verb	pf
-948	явле́ние	phenomenon	noun	n
-949	являться	to be / appear	verb	impf
-950	я́года	berry	noun	f
-951	язык	language / tongue	noun	m
-952	я́ма	pit / hole	noun	f
-953	я́ркий	bright	adjective
-954	я́сный	clear	adjective
-955	ящик	box / drawer	noun	m
-956	автомоби́ль	automobile	noun	m
-957	а́втор	author	noun	m
-958	адрес	address	noun	m
-959	акт	act	noun	m
-960	актёр	actor	noun	m
-961	анализ	analysis	noun	m
-962	а́рмия	army	noun	f
-963	аэропорт	airport	noun	m
-964	банк	bank	noun	m
-965	бе́гать	to run (around)	verb	impf
-966	бе́дный	poor	adjective
-967	бежать	to run	verb	impf
-968	бе́лый	white	adjective
-969	бе́рег	shore / bank	noun	m
-970	беспоко́иться	to worry	verb	impf
-971	благодари́ть	to thank	verb	impf
-972	блестящий	brilliant / shining	adjective
-973	ближе	closer	adverb
-974	блюдо	dish / course	noun	n
-975	бога́тый	rich	adjective
-976	бой	battle / fight	noun	m
-977	боле́знь	illness	noun	f
-978	боле́ть	to be ill / ache	verb	impf
-979	боль	pain	noun	f
-980	больни́ца	hospital	noun	f
-981	большо́й	big / large	adjective
-982	боя́ться	to be afraid	verb	impf
-983	брать	to take	verb	impf
-984	броса́ть	to throw	verb	impf
-985	будить	to wake (someone)	verb	impf
-986	бу́дто	as if	conjunction
-987	бума́га	paper	noun	f
-988	бутылка	bottle	noun	f
-989	бывать	to happen / frequent	verb	impf
-990	бы́стрый	fast / quick	adjective
-991	бюро	bureau / office	noun	n
-992	валюта	currency	noun	f
-993	ведь	after all / you see	particle
-994	везде́	everywhere	adverb
-995	вели́кий	great	adjective
-996	верить	to believe	verb	impf
-997	весёлый	cheerful	adjective
-998	весна́	spring (season)	noun	f
-999	вести	to lead / conduct	verb	impf
-1000	ветка	branch	noun	f
+Rank	Russian	English	POS	Notes	Pair
+1	и	and	conjunction		
+2	в	in / into	preposition		
+3	не	not	particle		
+4	он	he	pronoun		
+5	на	on / onto	preposition		
+6	я	I	pronoun		
+7	что	what / that	pronoun/conj		
+8	тот	that	pronoun		
+9	быть	to be	verb	impf	
+10	с	with / from	preposition		
+11	а	but / and	conjunction		
+12	весь	all / whole	pronoun		
+13	э́то	this / it	pronoun		
+14	как	how / as	adverb/conj		
+15	она́	she	pronoun		
+16	по	along / by	preposition		
+17	но	but	conjunction		
+18	они́	they	pronoun		
+19	к	to / towards	preposition		
+20	его́	his / him	pronoun		
+21	у	at / by	preposition		
+22	ты	you (sing.)	pronoun		
+23	её	her / hers	pronoun		
+24	из	from / out of	preposition		
+25	мы	we	pronoun		
+26	их	their / them	pronoun		
+27	за	behind / for	preposition		
+28	вы	you (pl./formal)	pronoun		
+29	так	so / thus	adverb		
+30	же	(emphatic particle)	particle		
+31	от	from	preposition		
+32	сказа́ть	to say	verb	pf	говори́ть (impf)
+33	э́тот	this	pronoun		
+34	кото́рый	which / who	pronoun		
+35	мочь	to be able	verb	impf	смочь (pf)
+36	челове́к	person / man	noun	m	
+37	о	about	preposition		
+38	меня́	me (acc./gen.)	pronoun		
+39	како́й	what kind of	pronoun		
+40	год	year	noun	m	
+41	ещё	still / more	adverb		
+42	тако́й	such	pronoun		
+43	то	then / that	particle/pron		
+44	себя́	oneself	pronoun		
+45	оди́н	one	numeral		
+46	для	for	preposition		
+47	до	until / up to	preposition		
+48	знать	to know	verb	impf	
+49	тебя́	you (acc./gen. sing.)	pronoun		
+50	мой	my	pronoun		
+51	до́лжен	must / obliged	adjective	short adj	
+52	э́та	this (f.)	pronoun		
+53	стать	to become	verb	pf	станови́ться (impf)
+54	е́сли	if	conjunction		
+55	ли	whether	particle		
+56	сам	oneself / myself	pronoun		
+57	когда́	when	adverb/conj		
+58	уже́	already	adverb		
+59	друго́й	other / another	adjective		
+60	нет	no / there is no	particle		
+61	говори́ть	to speak / say	verb	impf	сказа́ть (pf)
+62	наш	our	pronoun		
+63	мно́го	much / many	adverb		
+64	же́нщина	woman	noun	f	
+65	нас	us	pronoun		
+66	да	yes / and	particle		
+67	хоте́ть	to want	verb	impf	захоте́ть (pf)
+68	ну	well	particle		
+69	бы	would (subjunctive)	particle		
+70	без	without	preposition		
+71	ви́деть	to see	verb	impf	уви́деть (pf)
+72	под	under	preposition		
+73	про	about	preposition		
+74	мо́жно	one may / possible	predicative		
+75	врач	doctor	noun	m	
+76	вас	you (acc./gen. pl.)	pronoun		
+77	вре́мя	time	noun	n	
+78	рука́	hand / arm	noun	f	
+79	пе́рвый	first	adjective		
+80	де́ло	matter / business	noun	n	
+81	тут	here	adverb		
+82	где	where	adverb		
+83	сейча́с	now	adverb		
+84	мне	to me	pronoun	dative	
+85	раз	time / once	noun	m	
+86	два	two	numeral		
+87	ему́	to him / to it	pronoun		
+88	там	there	adverb		
+89	что́бы	in order to	conjunction		
+90	глаз	eye	noun	m	
+91	жизнь	life	noun	f	
+92	день	day	noun	m	
+93	тепе́рь	now	adverb		
+94	вот	here is / there	particle		
+95	сло́во	word	noun	n	
+96	идти́	to go (on foot)	verb	impf	пойти́ (pf)
+97	бо́льше	more / bigger	adverb		
+98	по́сле	after	preposition		
+99	ваш	your (pl.)	pronoun		
+100	си́ла	strength / force	noun	f	
+101	коне́ц	end	noun	m	
+102	голова́	head	noun	f	
+103	три	three	numeral		
+104	хоро́ший	good	adjective		
+105	сторона́	side	noun	f	
+106	по́мнить	to remember	verb	impf	
+107	нога́	leg / foot	noun	f	
+108	поня́ть	to understand	verb	pf	понима́ть (impf)
+109	ду́мать	to think	verb	impf	поду́мать (pf)
+110	поду́мать	to think (a bit)	verb	pf	ду́мать (impf)
+111	ме́сто	place	noun	n	
+112	спроси́ть	to ask	verb	pf	спра́шивать (impf)
+113	но́вый	new	adjective		
+114	жить	to live	verb	impf	
+115	рабо́та	work / job	noun	f	
+116	зде́сь	here	adverb		
+117	дом	house / home	noun	m	
+118	взять	to take	verb	pf	брать (impf)
+119	нельзя́	one must not	predicative		
+120	де́ньги	money	noun	pl	
+121	ро́вно	exactly / evenly	adverb		
+122	стоя́ть	to stand	verb	impf	
+123	два́жды	twice	adverb		
+124	поэ́тому	therefore	adverb		
+125	зна́чит	so / means	parenthetical		
+126	ты́сяча	thousand	noun	f	
+127	нача́ть	to begin	verb	pf	начина́ть (impf)
+128	всегда́	always	adverb		
+129	прийти́	to come / arrive	verb	pf	приходи́ть (impf)
+130	войти́	to enter	verb	pf	входи́ть (impf)
+131	каза́ться	to seem	verb	impf	показа́ться (pf)
+132	мать	mother	noun	f	
+133	и́мя	name	noun	n	
+134	сюда́	here (to here)	adverb		
+135	па́мять	memory	noun	f	
+136	си́льный	strong	adjective		
+137	това́рищ	comrade	noun	m	
+138	почти́	almost	adverb		
+139	сде́лать	to do / make	verb	pf	де́лать (impf)
+140	почему́	why	adverb		
+141	го́лос	voice	noun	m	
+142	всё	everything / all	pronoun		
+143	го́род	city	noun	m	
+144	вода́	water	noun	f	
+145	дава́ть	to give	verb	impf	дать (pf)
+146	нача́ло	beginning	noun	n	
+147	про́сто	simply	adverb		
+148	вопро́с	question	noun	m	
+149	земля́	earth / land	noun	f	
+150	нос	nose	noun	m	
+151	ну́жно	need to / necessary	predicative		
+152	ходи́ть	to walk / go	verb	impf	
+153	нача́ться	to begin (intr.)	verb	pf	начина́ться (impf)
+154	оте́ц	father	noun	m	
+155	поле́зный	useful	adjective		
+156	име́ть	to have	verb	impf	
+157	тёмный	dark	adjective		
+158	мир	world / peace	noun	m	
+159	нача́льник	boss / chief	noun	m	
+160	по́лный	full	adjective		
+161	четы́ре	four	numeral		
+162	молодо́й	young	adjective		
+163	про́тив	against	preposition		
+164	дать	to give	verb	pf	дава́ть (impf)
+165	дверь	door	noun	f	
+166	рабо́тать	to work	verb	impf	
+167	систе́ма	system	noun	f	
+168	сиде́ть	to sit	verb	impf	
+169	среди́	among	preposition		
+170	прийти́сь	to have to	verb	pf	приходи́ться (impf)
+171	ма́ленький	small	adjective		
+172	пять	five	numeral		
+173	писа́ть	to write	verb	impf	написа́ть (pf)
+174	вдруг	suddenly	adverb		
+175	нача́льный	initial	adjective		
+176	выходи́ть	to go out	verb	impf	вы́йти (pf)
+177	уви́деть	to see / catch sight	verb	pf	ви́деть (impf)
+178	вообще́	in general	adverb		
+179	ме́ньше	less	adverb		
+180	война́	war	noun	f	
+181	сра́зу	at once	adverb		
+182	зате́м	then / after that	adverb		
+183	улыба́ться	to smile	verb	impf	улыбну́ться (pf)
+184	губа́	lip	noun	f	
+185	мы́сль	thought	noun	f	
+186	до́лго	for a long time	adverb		
+187	ма́ма	mom	noun	f	
+188	власть	power / authority	noun	f	
+189	ноль	zero	noun	m	
+190	това́р	goods / commodity	noun	m	
+191	ну́жный	necessary	adjective		
+192	откры́ть	to open	verb	pf	открыва́ть (impf)
+193	страна́	country	noun	f	
+194	уйти́	to leave	verb	pf	уходи́ть (impf)
+195	па́па	dad	noun	m	
+196	неде́ля	week	noun	f	
+197	всё-таки	still / nevertheless	adverb		
+198	держа́ть	to hold	verb	impf	
+199	ма́ло	little / few	adverb		
+200	рассказа́ть	to tell / narrate	verb	pf	расска́зывать (impf)
+201	сле́довать	to follow	verb	impf	после́довать (pf)
+202	тру́дный	difficult	adjective		
+203	усло́вие	condition	noun	n	
+204	че́рез	through / across	preposition		
+205	зре́ние	sight / vision	noun	n	
+206	кни́га	book	noun	f	
+207	о́бщий	general / common	adjective		
+208	показа́ть	to show	verb	pf	пока́зывать (impf)
+209	про́сьба	request	noun	f	
+210	брат	brother	noun	m	
+211	ждать	to wait	verb	impf	подожда́ть (pf)
+212	зада́ча	task / problem	noun	f	
+213	интере́сный	interesting	adjective		
+214	ка́ждый	each / every	pronoun		
+215	класс	class	noun	m	
+216	мину́та	minute	noun	f	
+217	наро́д	people / nation	noun	m	
+218	нести́	to carry	verb	impf	понести́ (pf)
+219	ночь	night	noun	f	
+220	о́бщество	society	noun	n	
+221	де́сять	ten	numeral		
+222	око́нчить	to finish	verb	pf	ока́нчивать (impf)
+223	осо́бенно	especially	adverb		
+224	помо́чь	to help	verb	pf	помога́ть (impf)
+225	поря́док	order	noun	m	
+226	ра́зный	different / various	adjective		
+227	сча́стье	happiness	noun	n	
+228	уро́вень	level	noun	m	
+229	цель	goal / aim	noun	f	
+230	чёрный	black	adjective		
+231	чита́ть	to read	verb	impf	прочита́ть (pf)
+232	де́рево	tree	noun	n	
+233	доста́ть	to get / obtain	verb	pf	достава́ть (impf)
+234	зако́н	law	noun	m	
+235	иногда́	sometimes	adverb		
+236	край	edge / region	noun	m	
+237	де́ти	children	noun	pl	
+238	кровь	blood	noun	f	
+239	лежа́ть	to lie / be lying	verb	impf	
+240	ме́тод	method	noun	m	
+241	наприме́р	for example	parenthetical		
+242	но́мер	number	noun	m	
+243	о́браз	image / manner	noun	m	
+244	па́лец	finger	noun	m	
+245	приро́да	nature	noun	f	
+246	про́шлый	past / last	adjective		
+247	разви́тие	development	noun	n	
+248	результа́т	result	noun	m	
+249	свет	light	noun	m	
+250	се́рдце	heart	noun	n	
+251	сле́дующий	next / following	adjective		
+252	слы́шать	to hear	verb	impf	услы́шать (pf)
+253	ве́чер	evening	noun	m	
+254	смотре́ть	to look / watch	verb	impf	посмотре́ть (pf)
+255	со́лнце	sun	noun	n	
+256	среда́	environment / Wed.	noun	f	
+257	ста́рый	old	adjective		
+258	сын	son	noun	m	
+259	уче́ный	scientist / learned	noun/adj	m	
+260	фо́рма	form / shape	noun	f	
+261	хле́б	bread	noun	m	
+262	цена́	price	noun	f	
+263	часть	part	noun	f	
+264	е́хать	to go (by vehicle)	verb	impf	пое́хать (pf)
+265	чу́вство	feeling	noun	n	
+266	беда́	misfortune	noun	f	
+267	бить	to beat / hit	verb	impf	
+268	бли́зкий	close / near	adjective		
+269	бо́же	God (voc.)	noun	m	
+270	бок	side / flank	noun	m	
+271	боро́ться	to fight / struggle	verb	impf	
+272	бу́дущее	future	noun	n	
+273	ва́жный	important	adjective		
+274	век	century / age	noun	m	
+275	верну́ться	to return	verb	pf	возвраща́ться (impf)
+276	ве́тер	wind	noun	m	
+277	взгляд	glance / view	noun	m	
+278	вид	view / appearance	noun	m	
+279	вмести́ть	to contain / fit	verb	pf	вмеща́ть (impf)
+280	вообрази́ть	to imagine	verb	pf	вообража́ть (impf)
+281	воро́та	gate	noun	pl	
+282	впро́чем	however	parenthetical		
+283	враги́	enemies	noun	m pl	
+284	враг	enemy	noun	m	
+285	шесть	six	numeral		
+286	встать	to stand up	verb	pf	встава́ть (impf)
+287	встре́тить	to meet	verb	pf	встреча́ть (impf)
+288	вы́звать	to call / summon	verb	pf	вызыва́ть (impf)
+289	вы́йти	to go out / exit	verb	pf	выходи́ть (impf)
+290	вы́расти	to grow up	verb	pf	выраста́ть (impf)
+291	газе́та	newspaper	noun	f	
+292	где́-то	somewhere	adverb		
+293	геро́й	hero	noun	m	
+294	глубо́кий	deep	adjective		
+295	гора́	mountain	noun	f	
+296	горе́ть	to burn	verb	impf	сгоре́ть (pf)
+297	горя́чий	hot	adjective		
+298	госуда́рство	state	noun	n	
+299	гото́вый	ready	adjective		
+300	грани́ца	border	noun	f	
+301	семь	seven	numeral		
+302	грудь	chest / breast	noun	f	
+303	грязь	dirt / mud	noun	f	
+304	да́же	even	particle		
+305	да́льше	further	adverb		
+306	дви́гаться	to move	verb	impf	дви́нуться (pf)
+307	движе́ние	movement	noun	n	
+308	двор	yard / court	noun	m	
+309	де́вочка	girl (child)	noun	f	
+310	де́вушка	young woman	noun	f	
+311	де́йствие	action	noun	n	
+312	действи́тельно	really / indeed	adverb		
+313	де́лать	to do / make	verb	impf	сде́лать (pf)
+314	держа́ться	to hold on	verb	impf	
+315	деся́ток	ten / group of ten	noun	m	
+316	во́семь	eight	numeral		
+317	де́тство	childhood	noun	n	
+318	длина́	length	noun	f	
+319	дли́нный	long	adjective		
+320	до́брый	kind / good	adjective		
+321	дово́льно	rather / enough	adverb		
+322	дождь	rain	noun	m	
+323	доказа́ть	to prove	verb	pf	дока́зывать (impf)
+324	до́лжность	position / post	noun	f	
+325	доро́га	road	noun	f	
+326	дорого́й	expensive / dear	adjective		
+327	де́вять	nine	numeral		
+328	доста́точно	enough	adverb		
+329	дочь	daughter	noun	f	
+330	друг	friend	noun	m	
+331	дру́жба	friendship	noun	f	
+332	ду́ма	thought / Duma	noun	f	
+333	душа́	soul	noun	f	
+334	дя́дя	uncle	noun	m	
+335	еда́	food	noun	f	
+336	еди́нственный	only / sole	adjective		
+337	е́здить	to go (by vehicle)	verb	impf	
+338	вчера́	yesterday	adverb		
+339	есть	to eat / there is	verb	impf	съесть (pf)
+340	ещё раз	once more	adverb		
+341	жаль	pity / sorry	predicative		
+342	жела́ние	wish / desire	noun	n	
+343	жёлтый	yellow	adjective		
+344	жена́	wife	noun	f	
+345	же́нский	female / women's	adjective		
+346	живо́й	alive / living	adjective		
+347	живо́тное	animal	noun	n	
+348	бы́стро	quickly	adverb		
+349	забо́та	care / concern	noun	f	
+350	забы́ть	to forget	verb	pf	забыва́ть (impf)
+351	зави́сеть	to depend	verb	impf	
+352	заво́д	factory / plant	noun	m	
+353	за́втра	tomorrow	adverb		
+354	зада́ть	to set / pose	verb	pf	задава́ть (impf)
+355	зака́з	order (commercial)	noun	m	
+356	закры́ть	to close	verb	pf	закрыва́ть (impf)
+357	замети́ть	to notice	verb	pf	замеча́ть (impf)
+358	занима́ться	to be occupied with	verb	impf	заня́ться (pf)
+359	пло́хо	badly	adverb		
+360	за́пад	west	noun	m	
+361	запи́ска	note	noun	f	
+362	зато́	on the other hand	conjunction		
+363	зайти́	to drop by / call in	verb	pf	заходи́ть (impf)
+364	звать	to call / name	verb	impf	позва́ть (pf)
+365	звезда́	star	noun	f	
+366	звук	sound	noun	m	
+367	зда́ние	building	noun	n	
+368	здоро́вье	health	noun	n	
+369	здра́вствуй	hello	interjection		
+370	заче́м	what for	adverb		
+371	зелёный	green	adjective		
+372	зима́	winter	noun	f	
+373	знако́мый	familiar / acquaintance	adjective		
+374	зна́ние	knowledge	noun	n	
+375	значе́ние	meaning / significance	noun	n	
+376	золото́й	golden	adjective		
+377	зуб	tooth	noun	m	
+378	игра́	game	noun	f	
+379	игра́ть	to play	verb	impf	сыгра́ть (pf)
+380	иде́я	idea	noun	f	
+381	отку́да	from where	adverb		
+382	измени́ть	to change	verb	pf	изменя́ть (impf)
+383	изуча́ть	to study	verb	impf	изучи́ть (pf)
+384	вокру́г	around	preposition		
+385	ина́че	otherwise	adverb		
+386	интере́с	interest	noun	m	
+387	иска́ть	to look for	verb	impf	
+388	иску́сство	art	noun	n	
+389	испо́льзовать	to use	verb	biasp	
+390	исто́рия	history / story	noun	f	
+391	каби́нет	office / study	noun	m	
+392	наве́рное	probably	parenthetical		
+393	ка́мень	stone	noun	m	
+394	карти́на	picture / painting	noun	f	
+395	ка́рта	map / card	noun	f	
+396	ка́чество	quality	noun	n	
+397	кварти́ра	apartment	noun	f	
+398	кино́	cinema / movie	noun	n	
+399	класть	to put / lay	verb	impf	положи́ть (pf)
+400	ключ	key	noun	m	
+401	телефо́н	telephone	noun	m	
+402	кни́жка	little book	noun	f	
+403	коли́чество	quantity	noun	n	
+404	кома́нда	team / command	noun	f	
+405	ко́мната	room	noun	f	
+406	коне́чно	of course	parenthetical		
+407	копе́йка	kopeck	noun	f	
+408	коро́ткий	short	adjective		
+409	костю́м	suit / costume	noun	m	
+410	краси́вый	beautiful	adjective		
+411	кра́сный	red	adjective		
+412	кре́пкий	strong / firm	adjective		
+413	крик	shout / cry	noun	m	
+414	крича́ть	to shout	verb	impf	кри́кнуть (pf)
+415	кро́ме	except / besides	preposition		
+416	круг	circle	noun	m	
+417	круго́м	around	adverb		
+418	кры́ша	roof	noun	f	
+419	кто	who	pronoun		
+420	легко́	easily	adverb		
+421	кто́-то	someone	pronoun		
+422	куда́	where to	adverb		
+423	кула́к	fist	noun	m	
+424	культу́ра	culture	noun	f	
+425	купи́ть	to buy	verb	pf	покупа́ть (impf)
+426	кусо́к	piece	noun	m	
+427	ла́дно	all right / okay	particle		
+428	лес	forest	noun	m	
+429	лёгкий	light / easy	adjective		
+430	магази́н	shop / store	noun	m	
+431	опя́ть	again	adverb		
+432	ле́то	summer	noun	n	
+433	лицо́	face / person	noun	n	
+434	ли́чный	personal	adjective		
+435	лишь	only / merely	particle		
+436	лоб	forehead	noun	m	
+437	ло́жка	spoon	noun	f	
+438	ло́шадь	horse	noun	f	
+439	лу́чший	best	adjective		
+440	люби́ть	to love	verb	impf	полюби́ть (pf)
+441	любо́вь	love	noun	f	
+442	любо́й	any	pronoun		
+443	лю́ди	people	noun	pl	
+444	ма́льчик	boy	noun	m	
+445	маши́на	car / machine	noun	f	
+446	ме́дленно	slowly	adverb		
+447	ме́жду	between	preposition		
+448	ме́лкий	small / fine	adjective		
+449	ме́ра	measure	noun	f	
+450	мёртвый	dead	adjective		
+451	ча́й	tea	noun	m	
+452	ме́сяц	month	noun	m	
+453	ми́лый	dear / nice	adjective		
+454	млн	million	noun	m	
+455	мно́гие	many	pronoun		
+456	мо́ре	sea	noun	n	
+457	моро́з	frost	noun	m	
+458	мост	bridge	noun	m	
+459	му́ж	husband	noun	m	
+460	мужчи́на	man	noun	m	
+461	му́зыка	music	noun	f	
+462	на́до	must / need to	predicative		
+463	наде́жда	hope	noun	f	
+464	наза́д	back / ago	adverb		
+465	назва́ние	name / title	noun	n	
+466	называ́ть	to call / name	verb	impf	назва́ть (pf)
+467	наконе́ц	finally	adverb		
+468	нале́во	to the left	adverb		
+469	написа́ть	to write	verb	pf	писа́ть (impf)
+470	авто́бус	bus	noun	m	
+471	направле́ние	direction	noun	n	
+472	напра́во	to the right	adverb		
+473	наступи́ть	to step / set in	verb	pf	наступа́ть (impf)
+474	нау́ка	science	noun	f	
+475	находи́ть	to find	verb	impf	найти́ (pf)
+476	находи́ться	to be located	verb	impf	
+477	не́бо	sky / heaven	noun	n	
+478	неве́домый	unknown	adjective		
+479	компью́тер	computer	noun	m	
+480	неда́вно	recently	adverb		
+481	не́жный	tender / gentle	adjective		
+482	не́который	some / certain	pronoun		
+483	немно́го	a little	adverb		
+484	неожи́данно	unexpectedly	adverb		
+485	не́сколько	several	pronoun		
+486	ни́зкий	low	adjective		
+487	никако́й	no / none	pronoun		
+488	никогда́	never	adverb		
+489	никто́	no one	pronoun		
+490	ничего́	nothing	pronoun		
+491	но́вость	news	noun	f	
+492	но́рма	norm	noun	f	
+493	носи́ть	to wear / carry	verb	impf	
+494	ночно́й	night (adj.)	adjective		
+495	молоко́	milk	noun	n	
+496	нра́виться	to please / like	verb	impf	понра́виться (pf)
+497	обе́д	lunch / dinner	noun	m	
+498	о́бласть	region / field	noun	f	
+499	обрати́ть	to turn / direct	verb	pf	обраща́ть (impf)
+500	обы́чно	usually	adverb		
+501	обяза́тельно	necessarily	adverb		
+502	ого́нь	fire	noun	m	
+503	огро́мный	huge	adjective		
+504	оде́жда	clothing	noun	f	
+505	одна́жды	once / one day	adverb		
+506	одна́ко	however	conjunction		
+507	око́нчательно	finally / definitively	adverb		
+508	окно́	window	noun	n	
+509	окружа́ть	to surround	verb	impf	окружи́ть (pf)
+510	опа́сный	dangerous	adjective		
+511	опи́сывать	to describe	verb	impf	описа́ть (pf)
+512	определи́ть	to determine	verb	pf	определя́ть (impf)
+513	опуска́ть	to lower	verb	impf	опусти́ть (pf)
+514	о́пыт	experience / experiment	noun	m	
+515	организа́ция	organization	noun	f	
+516	метро́	metro / subway	noun	n	
+517	ору́жие	weapon	noun	n	
+518	о́сень	autumn	noun	f	
+519	основа́ние	foundation / basis	noun	n	
+520	осо́бый	special	adjective		
+521	остава́ться	to remain	verb	impf	оста́ться (pf)
+522	оста́вить	to leave (behind)	verb	pf	оставля́ть (impf)
+523	остально́й	the rest	adjective		
+524	останови́ться	to stop	verb	pf	остана́вливаться (impf)
+525	о́стрый	sharp	adjective		
+526	отвести́	to lead away	verb	pf	отводи́ть (impf)
+527	телеви́зор	television	noun	m	
+528	отве́т	answer	noun	m	
+529	отве́тить	to answer	verb	pf	отвеча́ть (impf)
+530	отда́ть	to give back	verb	pf	отдава́ть (impf)
+531	отде́льный	separate	adjective		
+532	откры́тый	open	adjective		
+533	отноше́ние	relation / attitude	noun	n	
+534	относи́ться	to relate / treat	verb	impf	отнести́сь (pf)
+535	отпра́вить	to send	verb	pf	отправля́ть (impf)
+536	отсю́да	from here	adverb		
+537	ко́фе	coffee	noun	m	
+538	отту́да	from there	adverb		
+539	официа́льный	official	adjective		
+540	о́чередь	queue / turn	noun	f	
+541	о́чень	very	adverb		
+542	оши́бка	mistake	noun	f	
+543	па́дать	to fall	verb	impf	упа́сть (pf)
+544	па́ра	pair / couple	noun	f	
+545	па́рень	guy / lad	noun	m	
+546	па́ртия	party / batch	noun	f	
+547	перее́хать	to move / cross	verb	pf	переезжа́ть (impf)
+548	мя́со	meat	noun	n	
+549	перо́	feather / pen	noun	n	
+550	петь	to sing	verb	impf	спеть (pf)
+551	печа́ль	sorrow	noun	f	
+552	пи́сьмо	letter	noun	n	
+553	пить	to drink	verb	impf	вы́пить (pf)
+554	план	plan	noun	m	
+555	плати́ть	to pay	verb	impf	заплати́ть (pf)
+556	пла́тье	dress	noun	n	
+557	плечо́	shoulder	noun	n	
+558	плохо́й	bad	adjective		
+559	гуля́ть	to stroll / walk	verb	impf	погуля́ть (pf)
+560	пло́щадь	square / area	noun	f	
+561	побе́да	victory	noun	f	
+562	поверну́ть	to turn	verb	pf	повора́чивать (impf)
+563	поведе́ние	behavior	noun	n	
+564	повтори́ть	to repeat	verb	pf	повторя́ть (impf)
+565	пого́да	weather	noun	f	
+566	подня́ть	to lift / raise	verb	pf	поднима́ть (impf)
+567	подня́ться	to rise	verb	pf	поднима́ться (impf)
+568	подойти́	to approach	verb	pf	подходи́ть (impf)
+569	ку́хня	kitchen	noun	f	
+570	подру́га	(female) friend	noun	f	
+571	по́езд	train	noun	m	
+572	пое́хать	to go (by vehicle)	verb	pf	е́хать (impf)
+573	пожа́луйста	please	particle		
+574	позвони́ть	to call (phone)	verb	pf	звони́ть (impf)
+575	по́здно	late	adverb		
+576	познако́миться	to get acquainted	verb	pf	знако́миться (impf)
+577	пойти́	to go	verb	pf	идти́ (impf)
+578	пока́	while / bye	conjunction		
+579	рестора́н	restaurant	noun	m	
+580	показа́ться	to seem / appear	verb	pf	каза́ться (impf)
+581	поко́й	peace / rest	noun	m	
+582	поколе́ние	generation	noun	n	
+583	по́ле	field	noun	n	
+584	поле́зно	useful(ly)	adverb		
+585	по́лзать	to crawl	verb	impf	
+586	поли́тика	politics / policy	noun	f	
+587	полага́ть	to suppose	verb	impf	
+588	положе́ние	situation / position	noun	n	
+589	за́втрак	breakfast	noun	m	
+590	положи́ть	to put / lay	verb	pf	класть (impf)
+591	получи́ть	to receive / get	verb	pf	получа́ть (impf)
+592	по́льза	benefit / use	noun	f	
+593	помога́ть	to help	verb	impf	помо́чь (pf)
+594	по́мощь	help / aid	noun	f	
+595	понима́ть	to understand	verb	impf	поня́ть (pf)
+596	поня́тно	clear / understood	predicative		
+597	поня́тие	concept / notion	noun	n	
+598	попа́сть	to get / hit	verb	pf	попада́ть (impf)
+599	по-пре́жнему	as before	adverb		
+600	пора́	it is time	predicative		
+601	поро́г	threshold	noun	m	
+602	посёлок	settlement	noun	m	
+603	после́дний	last	adjective		
+604	посмотре́ть	to look / watch	verb	pf	смотре́ть (impf)
+605	по́сле того́ как	after	conjunction		
+606	посреди́	in the middle of	preposition		
+607	поста́вить	to put / set	verb	pf	ста́вить (impf)
+608	постоя́нно	constantly	adverb		
+609	отдыха́ть	to rest	verb	impf	отдохну́ть (pf)
+610	поступи́ть	to act / enroll	verb	pf	поступа́ть (impf)
+611	потеря́ть	to lose	verb	pf	теря́ть (impf)
+612	пото́к	flow / stream	noun	m	
+613	потому́ что	because	conjunction		
+614	пото́м	then / later	adverb		
+615	похо́жий	similar	adjective		
+616	поэ́т	poet	noun	m	
+617	появи́ться	to appear	verb	pf	появля́ться (impf)
+618	пра́вда	truth	noun	f	
+619	пра́вило	rule	noun	n	
+620	по́чта	post / mail	noun	f	
+621	прави́тельство	government	noun	n	
+622	пра́во	right / law	noun	n	
+623	пра́вый	right (side)	adjective		
+624	пра́здник	holiday	noun	m	
+625	практи́чески	practically	adverb		
+626	предложи́ть	to offer / propose	verb	pf	предлага́ть (impf)
+627	предме́т	object / subject	noun	m	
+628	предста́вить	to present / imagine	verb	pf	представля́ть (impf)
+629	предприя́тие	enterprise	noun	n	
+630	пре́жде	before / formerly	adverb		
+631	кафе́	cafe	noun	n	
+632	прекра́сный	beautiful / splendid	adjective		
+633	преступле́ние	crime	noun	n	
+634	прибли́зиться	to draw near	verb	pf	приближа́ться (impf)
+635	привести́	to bring / lead	verb	pf	приводи́ть (impf)
+636	привы́чка	habit	noun	f	
+637	пригото́вить	to prepare	verb	pf	гото́вить (impf)
+638	призна́ть	to acknowledge	verb	pf	признава́ть (impf)
+639	прика́з	order / command	noun	m	
+640	приме́р	example	noun	m	
+641	крова́ть	bed	noun	f	
+642	принима́ть	to accept / take	verb	impf	приня́ть (pf)
+643	принести́	to bring	verb	pf	приноси́ть (impf)
+644	приня́ть	to accept	verb	pf	принима́ть (impf)
+645	приходи́ть	to come / arrive	verb	impf	прийти́ (pf)
+646	причи́на	reason / cause	noun	f	
+647	прия́тный	pleasant	adjective		
+648	пробле́ма	problem	noun	f	
+649	прове́рить	to check	verb	pf	проверя́ть (impf)
+650	проводи́ть	to conduct / see off	verb	impf	провести́ (pf)
+651	продолжа́ть	to continue	verb	impf	продо́лжить (pf)
+652	произведе́ние	work (of art)	noun	n	
+653	произво́дство	production	noun	n	
+654	произойти́	to happen / occur	verb	pf	происходи́ть (impf)
+655	пройти́	to pass / go through	verb	pf	проходи́ть (impf)
+656	проси́ть	to ask / request	verb	impf	попроси́ть (pf)
+657	просну́ться	to wake up	verb	pf	просыпа́ться (impf)
+658	просто́й	simple	adjective		
+659	простра́нство	space	noun	n	
+660	профе́ссор	professor	noun	m	
+661	гости́ница	hotel	noun	f	
+662	прохо́дить	to pass / go through	verb	impf	пройти́ (pf)
+663	проце́сс	process	noun	m	
+664	про́шлое	the past	noun	n	
+665	прямо́й	straight / direct	adjective		
+666	пря́мо	straight / directly	adverb		
+667	пти́ца	bird	noun	f	
+668	пусть	let / may	particle		
+669	путь	way / path	noun	m	
+670	пыта́ться	to try / attempt	verb	impf	попыта́ться (pf)
+671	пье́са	play (theater)	noun	f	
+672	пятна́дцать	fifteen	numeral		
+673	рабо́чий	worker / working	noun/adj	m	
+674	ра́вный	equal	adjective		
+675	рад	glad	adjective	short adj	
+676	ра́ди	for the sake of	preposition		
+677	ра́дость	joy	noun	f	
+678	развива́ть	to develop	verb	impf	разви́ть (pf)
+679	ра́зве	really? / surely	particle		
+680	апте́ка	pharmacy	noun	f	
+681	разгово́р	conversation	noun	m	
+682	разли́чный	various	adjective		
+683	разме́р	size	noun	m	
+684	райо́н	district	noun	m	
+685	ра́но	early	adverb		
+686	ра́ньше	earlier / before	adverb		
+687	расска́з	story / tale	noun	m	
+688	расти́	to grow	verb	impf	вы́расти (pf)
+689	ребёнок	child	noun	m	
+690	ребя́та	guys / kids	noun	pl	
+691	река́	river	noun	f	
+692	реше́ние	decision / solution	noun	n	
+693	реши́ть	to decide / solve	verb	pf	реша́ть (impf)
+694	рису́нок	drawing	noun	m	
+695	род	kind / genus	noun	m	
+696	роди́тель	parent	noun	m	
+697	роди́ться	to be born	verb	pf	рожда́ться (impf)
+698	ро́дина	homeland	noun	f	
+699	ро́дной	native / dear	adjective		
+700	рожде́ние	birth	noun	n	
+701	роль	role	noun	f	
+702	рома́н	novel	noun	m	
+703	росси́йский	Russian (state)	adjective		
+704	рост	growth / height	noun	m	
+705	рот	mouth	noun	m	
+706	руба́шка	shirt	noun	f	
+707	рубль	ruble	noun	m	
+708	руководи́тель	leader / head	noun	m	
+709	ру́сский	Russian	adjective		
+710	ру́чка	pen / handle	noun	f	
+711	ры́ба	fish	noun	f	
+712	ряд	row / series	noun	m	
+713	ря́дом	nearby	adverb		
+714	сад	garden	noun	m	
+715	сади́ться	to sit down	verb	impf	сесть (pf)
+716	самолёт	airplane	noun	m	
+717	са́мый	the most	pronoun		
+718	све́жий	fresh	adjective		
+719	све́рху	from above	adverb		
+720	фру́кты	fruit	noun	pl	
+721	свобо́да	freedom	noun	f	
+722	свобо́дный	free	adjective		
+723	свой	one's own	pronoun		
+724	свя́занный	connected	adjective		
+725	связь	connection / link	noun	f	
+726	се́вер	north	noun	m	
+727	сего́дня	today	adverb		
+728	секу́нда	second	noun	f	
+729	село́	village	noun	n	
+730	семья́	family	noun	f	
+731	се́рый	gray	adjective		
+732	серьёзный	serious	adjective		
+733	сестра́	sister	noun	f	
+734	сесть	to sit down	verb	pf	сади́ться (impf)
+735	си́льно	strongly	adverb		
+736	си́ний	dark blue	adjective		
+737	сия́ть	to shine	verb	impf	
+738	о́вощи	vegetables	noun	pl	
+739	ско́лько	how much / many	adverb		
+740	ско́рый	quick / fast	adjective		
+741	сле́довательно	consequently	conjunction		
+742	слеза́	tear	noun	f	
+743	сли́шком	too / excessively	adverb		
+744	слова́рь	dictionary	noun	m	
+745	сло́жный	complex / difficult	adjective		
+746	слу́жба	service	noun	f	
+747	слу́чай	case / occasion	noun	m	
+748	сыр	cheese	noun	m	
+749	случи́ться	to happen	verb	pf	случа́ться (impf)
+750	слу́шать	to listen	verb	impf	послу́шать (pf)
+751	сме́рть	death	noun	f	
+752	смех	laughter	noun	m	
+753	смея́ться	to laugh	verb	impf	засмея́ться (pf)
+754	смочь	to manage / be able	verb	pf	мочь (impf)
+755	снача́ла	at first	adverb		
+756	снег	snow	noun	m	
+757	сно́ва	again	adverb		
+758	соба́ка	dog	noun	f	
+759	собра́ние	meeting / collection	noun	n	
+760	со́бственный	own	adjective		
+761	собы́тие	event	noun	n	
+762	сове́т	advice / council	noun	m	
+763	сове́тский	Soviet	adjective		
+764	совреме́нный	modern	adjective		
+765	соверше́нно	completely	adverb		
+766	совсе́м	entirely / quite	adverb		
+767	путеше́ствовать	to travel	verb	impf	
+768	согласи́ться	to agree	verb	pf	соглаша́ться (impf)
+769	созда́ть	to create	verb	pf	создава́ть (impf)
+770	созна́ние	consciousness	noun	n	
+771	сойти́	to descend / go off	verb	pf	сходи́ть (impf)
+772	солда́т	soldier	noun	m	
+773	сон	dream / sleep	noun	m	
+774	сообщи́ть	to report / inform	verb	pf	сообща́ть (impf)
+775	соста́в	composition	noun	m	
+776	состоя́ние	condition / state	noun	n	
+777	состоя́ть	to consist	verb	impf	
+778	сохрани́ть	to keep / preserve	verb	pf	сохраня́ть (impf)
+779	социа́льный	social	adjective		
+780	сочине́ние	composition / essay	noun	n	
+781	спать	to sleep	verb	impf	
+782	специа́льный	special	adjective		
+783	спина́	back	noun	f	
+784	споко́йный	calm	adjective		
+785	спор	argument / dispute	noun	m	
+786	спо́соб	way / method	noun	m	
+787	спра́шивать	to ask	verb	impf	спроси́ть (pf)
+788	сре́дство	means	noun	n	
+789	ста́вить	to put / place	verb	impf	поста́вить (pf)
+790	стака́н	glass (cup)	noun	m	
+791	станови́ться	to become	verb	impf	стать (pf)
+792	ста́нция	station	noun	f	
+793	стара́ться	to try hard	verb	impf	постара́ться (pf)
+794	стари́к	old man	noun	m	
+795	ста́рший	elder / senior	adjective		
+796	танцева́ть	to dance	verb	impf	потанцева́ть (pf)
+797	статья́	article	noun	f	
+798	стекло́	glass	noun	n	
+799	стена́	wall	noun	f	
+800	сте́пень	degree	noun	f	
+801	стих	verse / poem	noun	m	
+802	сто	hundred	numeral		
+803	сто́ить	to cost	verb	impf	
+804	стол	table	noun	m	
+805	столи́ца	capital	noun	f	
+806	столь	so / such	adverb		
+807	сто́лько	so much / many	adverb		
+808	страда́ть	to suffer	verb	impf	пострада́ть (pf)
+809	страни́ца	page	noun	f	
+810	страх	fear	noun	m	
+811	стра́шный	terrible	adjective		
+812	стрела́	arrow	noun	f	
+813	стреми́ться	to strive	verb	impf	
+814	стро́гий	strict	adjective		
+815	стро́ить	to build	verb	impf	постро́ить (pf)
+816	строй	system / order	noun	m	
+817	струна́	string	noun	f	
+818	студе́нт	student	noun	m	
+819	стул	chair	noun	m	
+820	суд	court / judgment	noun	m	
+821	судьба́	fate / destiny	noun	f	
+822	су́мка	bag	noun	f	
+823	суть	essence	noun	f	
+824	существова́ть	to exist	verb	impf	
+825	схвати́ть	to grab	verb	pf	хвата́ть (impf)
+826	сце́на	scene / stage	noun	f	
+827	счастли́вый	happy	adjective		
+828	счёт	account / score	noun	m	
+829	счита́ть	to count / consider	verb	impf	посчита́ть (pf)
+830	сюже́т	plot	noun	m	
+831	табли́ца	table (chart)	noun	f	
+832	де́душка	grandfather	noun	m	
+833	та́йна	secret / mystery	noun	f	
+834	так как	since / because	conjunction		
+835	та́кже	also / as well	adverb		
+836	та́нец	dance	noun	m	
+837	твёрдый	hard / firm	adjective		
+838	твой	your (sing.)	pronoun		
+839	теа́тр	theater	noun	m	
+840	тем не ме́нее	nevertheless	conjunction		
+841	те́ма	theme / topic	noun	f	
+842	тепло́	warmth / warm	noun	n	
+843	теря́ть	to lose	verb	impf	потеря́ть (pf)
+844	течь	to flow	verb	impf	
+845	тип	type	noun	m	
+846	ти́хий	quiet	adjective		
+847	ти́хо	quietly	adverb		
+848	тогда́	then / at that time	adverb		
+849	то́же	also / too	adverb		
+850	толпа́	crowd	noun	f	
+851	ба́бушка	grandmother	noun	f	
+852	то́лстый	thick / fat	adjective		
+853	то́лько	only	particle		
+854	торго́вля	trade	noun	f	
+855	то́чка	dot / point	noun	f	
+856	то́чно	exactly / precisely	adverb		
+857	трава́	grass	noun	f	
+858	тре́бовать	to demand	verb	impf	потре́бовать (pf)
+859	тре́тий	third	numeral		
+860	труд	labor / work	noun	m	
+861	тру́дно	difficult(ly)	predicative		
+862	туда́	to there	adverb		
+863	тума́н	fog	noun	m	
+864	тяжёлый	heavy / hard	adjective		
+865	уби́ть	to kill	verb	pf	убива́ть (impf)
+866	уве́ренный	confident	adjective		
+867	у́гол	corner / angle	noun	m	
+868	уда́р	blow / strike	noun	m	
+869	удиви́ться	to be surprised	verb	pf	удивля́ться (impf)
+870	удово́льствие	pleasure	noun	n	
+871	уезжа́ть	to leave / depart	verb	impf	уе́хать (pf)
+872	узна́ть	to find out / recognize	verb	pf	узнава́ть (impf)
+873	у́лица	street	noun	f	
+874	улы́бка	smile	noun	f	
+875	улыбну́ться	to smile	verb	pf	улыба́ться (impf)
+876	ум	mind / intellect	noun	m	
+877	уме́ть	to know how	verb	impf	суме́ть (pf)
+878	умере́ть	to die	verb	pf	умира́ть (impf)
+879	у́мный	clever / smart	adjective		
+880	услы́шать	to hear	verb	pf	слы́шать (impf)
+881	успе́ть	to have time / manage	verb	pf	успева́ть (impf)
+882	успе́х	success	noun	m	
+883	устро́ить	to arrange	verb	pf	устра́ивать (impf)
+884	у́тро	morning	noun	n	
+885	у́хо	ear	noun	n	
+886	уходи́ть	to leave / go away	verb	impf	уйти́ (pf)
+887	уча́стие	participation	noun	n	
+888	уча́сток	plot / section	noun	m	
+889	учёный	scholar / scientist	noun	m	
+890	учи́лище	college / school	noun	n	
+891	учи́тель	teacher	noun	m	
+892	учи́ть	to teach / learn	verb	impf	вы́учить (pf)
+893	учи́ться	to study / learn	verb	impf	научи́ться (pf)
+894	фа́брика	factory	noun	f	
+895	факт	fact	noun	m	
+896	фами́лия	surname	noun	f	
+897	фигу́ра	figure	noun	f	
+898	фильм	film / movie	noun	m	
+899	фронт	front (mil.)	noun	m	
+900	хара́ктер	character / temper	noun	m	
+901	хвата́ть	to suffice / grab	verb	impf	хвати́ть (pf)
+902	хи́мия	chemistry	noun	f	
+903	хозя́ин	owner / host	noun	m	
+904	холо́дный	cold	adjective		
+905	хорошо́	well / good	adverb		
+906	хоть	though / even	conjunction		
+907	храни́ть	to store / keep	verb	impf	сохрани́ть (pf)
+908	худо́жник	artist	noun	m	
+909	худо́жественный	artistic	adjective		
+910	царь	tsar	noun	m	
+911	цвет	color	noun	m	
+912	це́лый	whole / entire	adjective		
+913	центр	center	noun	m	
+914	це́рковь	church	noun	f	
+915	ци́фра	digit / figure	noun	f	
+916	час	hour	noun	m	
+917	ча́стый	frequent	adjective		
+918	ча́сто	often	adverb		
+919	части́ца	particle	noun	f	
+920	черта́	line / trait	noun	f	
+921	че́тверть	quarter	noun	f	
+922	число́	number / date	noun	n	
+923	чи́стый	clean / pure	adjective		
+924	член	member	noun	m	
+925	что́-то	something	pronoun		
+926	чу́вствовать	to feel	verb	impf	почу́вствовать (pf)
+927	чу́до	miracle / wonder	noun	n	
+928	чужо́й	someone else's / alien	adjective		
+929	шаг	step	noun	m	
+930	ша́пка	cap / hat	noun	f	
+931	широ́кий	wide / broad	adjective		
+932	шко́ла	school	noun	f	
+933	шум	noise	noun	m	
+934	шуме́ть	to make noise	verb	impf	
+935	шути́ть	to joke	verb	impf	пошути́ть (pf)
+936	шу́тка	joke	noun	f	
+937	щека́	cheek	noun	f	
+938	экза́мен	exam	noun	m	
+939	экономи́ка	economy / economics	noun	f	
+940	экра́н	screen	noun	m	
+941	элеме́нт	element	noun	m	
+942	эне́ргия	energy	noun	f	
+943	эпо́ха	epoch / era	noun	f	
+944	эта́ж	floor / story	noun	m	
+945	юг	south	noun	m	
+946	я́блоко	apple	noun	n	
+947	яви́ться	to appear / show up	verb	pf	явля́ться (impf)
+948	явле́ние	phenomenon	noun	n	
+949	явля́ться	to be / appear	verb	impf	яви́ться (pf)
+950	я́года	berry	noun	f	
+951	язы́к	language / tongue	noun	m	
+952	я́ма	pit / hole	noun	f	
+953	я́ркий	bright	adjective		
+954	я́сный	clear	adjective		
+955	я́щик	box / drawer	noun	m	
+956	автомоби́ль	automobile	noun	m	
+957	а́втор	author	noun	m	
+958	а́дрес	address	noun	m	
+959	акт	act	noun	m	
+960	актёр	actor	noun	m	
+961	ана́лиз	analysis	noun	m	
+962	а́рмия	army	noun	f	
+963	аэропо́рт	airport	noun	m	
+964	банк	bank	noun	m	
+965	бе́гать	to run (around)	verb	impf	
+966	бе́дный	poor	adjective		
+967	бежа́ть	to run	verb	impf	побежа́ть (pf)
+968	бе́лый	white	adjective		
+969	бе́рег	shore / bank	noun	m	
+970	беспоко́иться	to worry	verb	impf	
+971	благодари́ть	to thank	verb	impf	поблагодари́ть (pf)
+972	блестя́щий	brilliant / shining	adjective		
+973	бли́же	closer	adverb		
+974	блю́до	dish / course	noun	n	
+975	бога́тый	rich	adjective		
+976	бой	battle / fight	noun	m	
+977	боле́знь	illness	noun	f	
+978	боле́ть	to be ill / ache	verb	impf	заболе́ть (pf)
+979	боль	pain	noun	f	
+980	больни́ца	hospital	noun	f	
+981	большо́й	big / large	adjective		
+982	боя́ться	to be afraid	verb	impf	
+983	брать	to take	verb	impf	взять (pf)
+984	броса́ть	to throw	verb	impf	бро́сить (pf)
+985	буди́ть	to wake (someone)	verb	impf	разбуди́ть (pf)
+986	бу́дто	as if	conjunction		
+987	бума́га	paper	noun	f	
+988	буты́лка	bottle	noun	f	
+989	быва́ть	to happen / be (sometimes)	verb	impf	
+990	бы́стрый	fast / quick	adjective		
+991	бюро́	bureau / office	noun	n	
+992	валю́та	currency	noun	f	
+993	ведь	after all / you see	particle		
+994	везде́	everywhere	adverb		
+995	вели́кий	great	adjective		
+996	ве́рить	to believe	verb	impf	пове́рить (pf)
+997	весёлый	cheerful	adjective		
+998	весна́	spring (season)	noun	f	
+999	вести́	to lead / conduct	verb	impf	повести́ (pf)
+1000	ве́тка	branch	noun	f	

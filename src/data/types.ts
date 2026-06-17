@@ -89,6 +89,8 @@ export interface VocabWord {
   readonly english: string;
   readonly pos: string;
   readonly notes?: string;
+  /** Aspectual partner verb, e.g. "говори́ть (impf)". Empty for non-verbs. */
+  readonly pair?: string;
 }
 
 export type Direction = 'ru-en' | 'en-ru';

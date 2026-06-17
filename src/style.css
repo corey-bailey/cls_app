@@ -973,6 +973,32 @@ body {
   font-weight: 600;
 }
 
+.flashcard-pair {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--color-text);
+}
+
+.flashcard-pair-label {
+  display: inline-block;
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--color-accent);
+  background: var(--color-accent-soft);
+  padding: 1px 6px;
+  border-radius: 6px;
+  margin-right: 4px;
+  vertical-align: middle;
+}
+
+.flashcard-footer {
+  font-size: 11px;
+  color: var(--color-text-muted);
+  font-weight: 600;
+}
+
 .flashcard-audio {
   background: var(--color-accent-soft);
   border: none;
