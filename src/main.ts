@@ -8,6 +8,7 @@ import { renderPrep } from './pages/prep.ts';
 import { renderPhrases } from './pages/phrases.ts';
 import { renderFlashcards } from './pages/flashcards.ts';
 import { renderMindset } from './pages/mindset.ts';
+import { renderResources } from './pages/resources.ts';
 import { renderDailyPlanPage } from './pages/daily-plan.ts';
 
 const app = document.getElementById('app')!;
@@ -27,6 +28,7 @@ registerRoute('prep', renderPrep);
 registerRoute('phrases', renderPhrases);
 registerRoute('flashcards', renderFlashcards);
 registerRoute('mindset', renderMindset);
+registerRoute('resources', renderResources);
 
 // Initialize
 initTTS();

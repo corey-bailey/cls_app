@@ -13,6 +13,7 @@ const tabs: readonly Tab[] = [
   { id: 'phrases', label: 'Phrases', icon: '&#128172;' },
   { id: 'flashcards', label: 'Cards', icon: '&#127183;' },
   { id: 'mindset', label: 'Mindset', icon: '&#129504;' },
+  { id: 'resources', label: 'Links', icon: '&#128279;' },
 ];
 
 export function renderNav(container: HTMLElement): void {

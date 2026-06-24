@@ -32,6 +32,7 @@ export const mindsetSections: readonly MindsetSection[] = [
     title: 'The 5 Week-1 Rules',
     icon: '\u{1F6DF}',
     intro: 'Week 1 is about staying open \u2014 not sounding smart. If you leave Week 1 still talking, still listening, and still showing up, you are succeeding.',
+    week: 1,
     cards: [
       {
         id: 'rule-1',
@@ -71,6 +72,7 @@ export const mindsetSections: readonly MindsetSection[] = [
     title: 'Week 1 Day-by-Day',
     icon: '\u{1F4C5}',
     intro: 'Here\'s what each day of CLS Week 1 actually feels like \u2014 and what "winning" looks like for each one.',
+    week: 1,
     cards: [
       {
         id: 'w1d1',
@@ -121,6 +123,7 @@ export const mindsetSections: readonly MindsetSection[] = [
     title: 'Week 2: Reorganizing',
     icon: '\u{1F9E9}',
     intro: 'Week 2 is when "the language starts fighting back." You understand more but feel less confident. This is your brain re-calibrating \u2014 not stagnating.',
+    week: 2,
     cards: [
       {
         id: 'w2-speak',
@@ -154,6 +157,7 @@ export const mindsetSections: readonly MindsetSection[] = [
     title: 'Week 3: Integration',
     icon: '\u{1F4AA}',
     intro: 'Week 3 is where CLS starts to feel worth it. Skills consolidate. Confidence catches up to ability.',
+    week: 3,
     cards: [
       {
         id: 'w3-speak',
@@ -296,8 +300,8 @@ export const mindsetSections: readonly MindsetSection[] = [
       {
         id: 'mind-13',
         question: 'What will I be able to do after 8 weeks?',
-        answer: 'CLS covers the equivalent of one academic year of Russian. Realistically: you\'ll speak more confidently (not perfectly), understand the gist of real conversations, navigate daily life in Russian, and have the momentum to keep growing. Some students test up an entire ACTFL level. The range is wide \u2014 what matters is YOUR growth.',
-        takeaway: 'One academic year of Russian in 8 weeks. Your growth is the metric, not some absolute standard.',
+        answer: 'You\'re arriving with about a year of college Russian \u2014 CLS adds roughly another academic year on top, in eight weeks. Realistically: you\'ll speak more confidently (not perfectly), understand the gist of real conversations, navigate daily life in Russian, and have the momentum to keep growing. Some students test up an entire ACTFL level. The range is wide \u2014 what matters is YOUR growth, not the heritage speaker next to you.',
+        takeaway: 'One more academic year of Russian in 8 weeks. Your growth is the metric, not some absolute standard.',
       },
       {
         id: 'mind-14',
@@ -320,8 +324,232 @@ export const mindsetSections: readonly MindsetSection[] = [
       },
     ],
   },
+  {
+    id: 'week4-plateau',
+    title: 'Week 4: Plateau & Consolidation',
+    icon: '\u{1F9D7}',
+    intro: 'Around the midpoint, progress often feels invisible. You\'re not stuck — your brain is making what you already know automatic. This is the most important week to trust the process.',
+    week: 4,
+    cards: [
+      {
+        id: 'w4-plateau',
+        question: 'Why does it feel like I stopped improving?',
+        answer: 'Weeks 1–3 added a flood of new input. Week 4 is when your brain organizes it. The gains go underground — you\'re not adding new things, you\'re making the old things faster and more automatic. It feels flat because the work is invisible. It is still happening.',
+        takeaway: 'Plateaus are where skills become automatic. Flat on the surface, busy underneath.',
+      },
+      {
+        id: 'w4-midpoint',
+        question: 'I\'m halfway through and not fluent — am I behind?',
+        answer: 'No. Halfway through the program is not the same as halfway to fluent, and you were never going to be fluent in 8 weeks anyway. With about a year of college Russian coming in, you\'re right where a Week-4 student should be. Measure against your Week-1 self, not against fluency.',
+        takeaway: 'Halfway through ≠ halfway to fluent. Growth is not linear.',
+      },
+      {
+        id: 'w4-grammar',
+        question: 'Should I cram more grammar now?',
+        answer: 'No. You don\'t need new rules — you need the first-year grammar you already have (the six cases, present and past tense, basic aspect) to become automatic. Depth beats breadth this week. Pick the one thing you keep getting wrong and just notice it in real speech, instead of opening a new chapter.',
+        takeaway: 'Consolidate what you have. Depth over new rules.',
+        actionItem: 'Pick one case you keep getting wrong and just listen for it all week — don\'t study it, hear it',
+      },
+      {
+        id: 'w4-routine',
+        question: 'How do I keep momentum when the novelty is gone?',
+        answer: 'The excitement of Weeks 1–2 is gone, and motivation dips for almost everyone around now. This is where routine carries you: protected sleep, daily exercise, small consistent reps. You don\'t need to feel inspired — you need to keep showing up. The motivation comes back in Week 5.',
+        takeaway: 'Discipline replaces novelty around Week 4. Lean on routine, not inspiration.',
+      },
+      {
+        id: 'w4-host',
+        question: 'My host-family conversations feel repetitive.',
+        answer: 'Repetition is the curriculum, not a sign of being stuck. The same dinner-table topics are exactly how vocabulary becomes automatic. Instead of new topics, go one layer deeper on a familiar one: ask why, ask for a story, share a small opinion. Same topic, more depth.',
+        takeaway: 'Repetition is the curriculum. Go deeper on familiar topics, not wider.',
+        actionItem: 'Ask one follow-up question on a topic you\'ve already covered with your host family',
+      },
+    ],
+  },
+  {
+    id: 'week5-secondwind',
+    title: 'Week 5: Second Wind',
+    icon: '\u{1F32C}',
+    intro: 'Week 4’s invisible work starts paying off. Comprehension jumps, speaking loosens, and confidence returns. This is the week to push your edges on purpose.',
+    week: 5,
+    cards: [
+      {
+        id: 'w5-breakthrough',
+        question: 'Things suddenly feel easier — is that real?',
+        answer: 'Yes. The plateau of Week 4 typically pays off in Week 5. You\'ll catch more of what people say, respond faster, and feel less braced before every conversation. This is real consolidation, not a fluke. Trust it and use it — don\'t wait for it to disappear.',
+        takeaway: 'Week 5 often delivers the payoff for Week 4’s invisible work.',
+      },
+      {
+        id: 'w5-risk',
+        question: 'How do I keep growing now that it’s easier?',
+        answer: 'Raise the difficulty on purpose. Take longer turns, pick harder topics, give opinions instead of just facts. Comfort is a sign you can handle more. The students who plateau again are the ones who coast; the ones who keep stretching keep climbing.',
+        takeaway: 'When it feels easy, make it harder on purpose.',
+        actionItem: 'Take one speaking risk today you’d have avoided in Week 1 — a longer answer, a real opinion',
+      },
+      {
+        id: 'w5-complexity',
+        question: 'Can I start using more complex sentences?',
+        answer: 'Yes — this is the week to connect your speech. Link clauses with потому что (because), поэтому (so), and который (which/who). You don\'t need perfect grammar — you need to stop speaking in isolated phrases and start joining your ideas together.',
+        takeaway: 'Connect your sentences. That’s the jump from first-year to functional.',
+      },
+      {
+        id: 'w5-errors',
+        question: 'I still make tons of mistakes — is that bad?',
+        answer: 'No. At this stage, fluency means making errors at speed, not making no errors. Keep accuracy as a slow background project, but never let the fear of a wrong case ending slow you down. Errors at speed beat silence with perfect grammar, every single time.',
+        takeaway: 'Errors-at-speed beat silence-with-perfect-grammar.',
+      },
+      {
+        id: 'w5-feedback',
+        question: 'Should I ask for more correction now?',
+        answer: 'Yes — you can finally absorb it. In Week 1 corrections just added stress; now you have enough automaticity to act on them. Ask your teacher or host family to flag one mistake you make over and over. One targeted fix beats a page of red ink.',
+        takeaway: 'You can absorb correction now. Ask for one recurring fix, not everything.',
+        actionItem: 'Ask someone to point out one mistake you make repeatedly — then hunt for it',
+      },
+    ],
+  },
+  {
+    id: 'week6-independence',
+    title: 'Week 6: Independence',
+    icon: '\u{1F9ED}',
+    intro: 'Week 6 is where Russian stops being a class and becomes a life. You handle things alone, relationships deepen, and you start living in the language instead of performing it.',
+    week: 6,
+    cards: [
+      {
+        id: 'w6-solo',
+        question: 'Can I really handle things on my own now?',
+        answer: 'Yes — and you should. Run errands, order food, take a taxi, ask for help, all in Russian and all solo. Doing real tasks alone builds confidence faster than any classroom drill, because the stakes are real and you find out you can actually do it.',
+        takeaway: 'Independence builds confidence faster than class does.',
+        actionItem: 'Do one task alone in Russian you’d normally avoid — the market, a taxi, a café order',
+      },
+      {
+        id: 'w6-unplanned',
+        question: 'What if something unexpected happens?',
+        answer: 'You\'re more ready than you feel. You have your survival phrases, enough Russian to improvise, and the clarification skills you drilled in Week 1. When something goes sideways — wrong bus, confused order, a question you didn\'t expect — that\'s not a failure, it\'s the real test, and passing it is a bigger win than any quiz.',
+        takeaway: 'Handling an unplanned moment in Russian is a bigger win than any test score.',
+      },
+      {
+        id: 'w6-relationships',
+        question: 'How do my relationships change this week?',
+        answer: 'Your host family and classmates start becoming actual friends. Conversations get personal — jokes, opinions, small frustrations, real stories. You stop performing “Russian student answers question” and start being a person who happens to be speaking Russian. That shift is the heart of immersion.',
+        takeaway: 'You stop performing Russian and start living in it.',
+      },
+      {
+        id: 'w6-excursion',
+        question: 'How do I get the most out of excursions and outings?',
+        answer: 'Treat every outing as input, not a break from learning. Narrate what you see, ask locals and guides questions, read the signs. The one thing that wastes an excursion is clustering with the other English speakers and switching off. Stay in Russian even when it’s optional.',
+        takeaway: 'Every outing is a rep. Don’t cluster with the English speakers.',
+        actionItem: 'Ask a guide or a stranger one question in Russian on your next outing',
+      },
+      {
+        id: 'w6-identity',
+        question: 'I feel like a slightly different person in Russian.',
+        answer: 'That\'s normal — and it\'s a good sign. Most people have a slightly different personality in their second language: maybe blunter, funnier, quieter, or more direct. That second-language self isn\'t fake; it\'s part of becoming fluent. Let it exist instead of fighting to be your exact English self.',
+        takeaway: 'Your Russian-self is allowed to be a little different from your English-self.',
+      },
+    ],
+  },
+  {
+    id: 'week7-finalpush',
+    title: 'Week 7: Final Push & Assessments',
+    icon: '\u{1F3C1}',
+    intro: 'The final OPI or presentation is coming. The goal this week is to perform what you already have — not to cram new grammar or burn out before the finish line.',
+    week: 7,
+    cards: [
+      {
+        id: 'w7-assessment',
+        question: 'How do I prep for the final OPI or presentation?',
+        answer: 'Review your own recurring patterns, not new material. Rehearse out loud — record yourself answering common questions and listen back. The OPI rewards keeping the conversation going, using your clarification phrases, and showing what you can do, not flawless grammar. Practice talking, not studying.',
+        takeaway: 'Rehearse out loud. The OPI rewards communication, not perfection.',
+        actionItem: 'Do a timed mock interview: Откуда вы? Чем занимаетесь? Что вам понравилось?',
+      },
+      {
+        id: 'w7-nerves',
+        question: 'I’m anxious about being tested.',
+        answer: 'The OPI is a conversation, not a trap. The examiner wants you to succeed and will follow your lead. Treat it like a host-family chat: ask for repetition if you need it (Повторите, пожалуйста), think out loud, and keep going when you stumble. Silence hurts more than a wrong ending.',
+        takeaway: 'The OPI measures communication, not flawless grammar — keep talking.',
+      },
+      {
+        id: 'w7-peak',
+        question: 'Should I cram hard this week?',
+        answer: 'No. Cramming the week before the finish risks burnout right when you need to perform. Steady reps plus sleep beat marathon study sessions. You\'ve done the work for seven weeks — trust it. Arrive at the assessment rested and warm, not fried.',
+        takeaway: 'Don’t sprint the week before the finish line. Pace it, sleep, trust the work.',
+      },
+      {
+        id: 'w7-immersion',
+        question: 'Do I keep immersing or switch to test-prep mode?',
+        answer: 'Stay immersed. Living in Russian — host-family dinners, errands, conversations — is the best assessment prep there is. Retreating into English flashcards and grammar tables actually makes you slower and more anxious on test day. Your daily immersion is the prep.',
+        takeaway: 'Immersion is your assessment prep — don’t abandon it for the textbook.',
+      },
+      {
+        id: 'w7-evidence',
+        question: 'How do I see how far I’ve actually come?',
+        answer: 'Re-record the self-introduction you made on Day 1 of your prep — same prompt, today. Then play the two back to back. The gap between them is your proof. Most students are shocked by how much faster, looser, and more confident they sound. That gap is what CLS bought you.',
+        takeaway: 'The Day-1 vs Week-7 recording gap is your hard evidence of growth.',
+        actionItem: 'Re-record your self-introduction and compare it to your very first one',
+      },
+    ],
+  },
+  {
+    id: 'week8-closure',
+    title: 'Week 8: Closure & Re-entry',
+    icon: '\u{1F9F3}',
+    intro: 'The last week is about goodbyes, honest reflection, and protecting what you built. The gains are real — but without a plan, they fade fast once you’re home.',
+    week: 8,
+    cards: [
+      {
+        id: 'w8-goodbye',
+        question: 'How do I say goodbye to my host family well?',
+        answer: 'Say it in Russian, however imperfect. Thank them for something specific — a meal, a conversation, their patience — not just a generic Спасибо. This relationship carried your immersion, and a heartfelt, broken Russian goodbye means far more to them than a polished English one. Effort over elegance, one last time.',
+        takeaway: 'A heartfelt, imperfect Russian goodbye beats a polished English one.',
+        actionItem: 'Thank your host family in Russian for one specific thing they did for you',
+      },
+      {
+        id: 'w8-reflect',
+        question: 'How do I measure what I actually gained?',
+        answer: 'Not by fluency — you’re not fluent, and that was never the goal. Measure the durable things: you speak when you’re unsure, you recover from confusion instead of freezing, and you can live a whole day in Russian. Those don’t disappear. You’re leaving with momentum and resilience, not a finished language.',
+        takeaway: 'You’re leaving with momentum and resilience, not a finished language.',
+      },
+      {
+        id: 'w8-cliff',
+        question: 'What happens to my Russian when I get home?',
+        answer: 'Be honest: without a plan, it fades fast. This is the re-entry cliff — you go from all-day immersion to zero Russian overnight, and the gains erode within weeks. The good news: the cliff is avoidable. The skills are protectable, just not automatically. You have to decide to keep them.',
+        takeaway: 'The post-CLS cliff is real — momentum needs a plan to survive it.',
+      },
+      {
+        id: 'w8-maintain',
+        question: 'How do I keep Russian alive at home?',
+        answer: 'Schedule weekly reps before the habit dies. Concrete options: a weekly tutor or language partner (iTalki), a podcast on your commute, one Russian show, and texting a CLS friend in Russian. One recurring commitment you actually keep beats five ambitious ones you don’t.',
+        takeaway: 'Book recurring reps now — one kept commitment beats five abandoned ones.',
+        actionItem: 'Book one recurring Russian commitment (tutor, partner, group) before you fly home',
+      },
+      {
+        id: 'w8-next',
+        question: 'What’s the realistic picture after CLS?',
+        answer: 'You came in with about a year of college Russian; you’re leaving closer to two years’ worth, with real immersion experience textbooks can’t give. You’re not fluent — but you’re launched. From here, the students who keep showing up keep closing the gap. CLS didn’t finish the job; it gave you the momentum to finish it yourself.',
+        takeaway: 'CLS launched you — staying in the language is now the whole game.',
+      },
+    ],
+  },
 ];
 
 export function getAllRevealCardIds(): readonly string[] {
   return mindsetSections.flatMap((s) => s.cards.map((c) => c.id));
+}
+
+/** Sorted, distinct program-week numbers that have mindset sections. */
+export function getMindsetWeeks(): readonly number[] {
+  const weeks = new Set<number>();
+  for (const s of mindsetSections) {
+    if (s.week !== undefined) weeks.add(s.week);
+  }
+  return [...weeks].sort((a, b) => a - b);
+}
+
+/** Sections tagged to a given program week. */
+export function getSectionsForWeek(week: number): readonly MindsetSection[] {
+  return mindsetSections.filter((s) => s.week === week);
+}
+
+/** Untagged sections that apply across the whole program (General). */
+export function getGeneralSections(): readonly MindsetSection[] {
+  return mindsetSections.filter((s) => s.week === undefined);
 }

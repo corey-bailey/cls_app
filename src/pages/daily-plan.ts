@@ -7,7 +7,7 @@ export function renderDailyPlanPage(container: HTMLElement): void {
   const header = document.createElement('div');
   header.innerHTML = `
     <div class="page-title">2-Week Prep Plan</div>
-    <div class="page-subtitle">Daily structure: listen, speak, focus on one grammar point, do one real-life task. You're training endurance and confidence, not perfection.</div>
+    <div class="page-subtitle">Built for one year of college Russian: each day reviews a first-year fundamental, then puts it to work. Listen, speak, focus on one grammar point, do one real-life task. You're training endurance and confidence, not perfection.</div>
   `;
   container.appendChild(header);
 

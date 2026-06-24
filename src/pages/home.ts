@@ -4,6 +4,7 @@ import { getProgress, getRevealProgress, getTheme, setTheme } from '../storage.t
 import { getAllCheckItemIds } from '../data/sections.ts';
 import { getAllRevealCardIds } from '../data/mindset.ts';
 import { getAllDailyTaskIds } from '../data/daily-plan.ts';
+import { resourceCategories } from '../data/resources.ts';
 import type { ThemeName } from '../data/types.ts';
 
 export function renderHome(container: HTMLElement): void {
@@ -65,6 +66,12 @@ export function renderHome(container: HTMLElement): void {
       label: 'Mindset Guide',
       sub: `${revealProgress.done}/${revealProgress.total} explored`,
       route: 'mindset',
+    },
+    {
+      icon: '\u{1F517}',
+      label: 'Resources',
+      sub: `${resourceCategories.reduce((n, c) => n + c.links.length, 0)} tools & guides`,
+      route: 'resources',
     },
   ];
 

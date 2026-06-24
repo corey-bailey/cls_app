@@ -26,6 +26,8 @@ export interface MindsetSection {
   readonly title: string;
   readonly icon: string;
   readonly intro: string;
+  /** Program week (1-8) this section belongs to. Omitted = General. */
+  readonly week?: number;
   readonly cards: readonly RevealCard[];
 }
 
