@@ -12,6 +12,21 @@ export interface Deck {
   readonly words: readonly VocabWord[];
 }
 
+/** POS tags treated as grammatical "filler" — excluded from flashcard decks. */
+const FILLER_POS: ReadonlySet<string> = new Set([
+  'conjunction',
+  'preposition',
+  'particle',
+  'parenthetical',
+  'interjection',
+  'particle/pron', // "то" — primarily a particle here
+]);
+
+/** True for grammatical glue words a learner doesn't drill (и, в, не, конечно…). */
+export function isFillerWord(word: VocabWord): boolean {
+  return FILLER_POS.has(word.pos);
+}
+
 /** Strips Cyrillic stress marks (combining diacritics) so accented forms compare equal. */
 function deaccent(s: string): string {
   return s.normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase();

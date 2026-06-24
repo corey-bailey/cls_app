@@ -1,5 +1,5 @@
 import type { Deck } from '../data/decks.ts';
-import { buildDecks, mergeAspectPairs } from '../data/decks.ts';
+import { buildDecks, mergeAspectPairs, isFillerWord } from '../data/decks.ts';
 import type { Direction, Grade, VocabWord } from '../data/types.ts';
 import { renderFlashcard } from '../components/flashcard.ts';
 import {
@@ -26,7 +26,8 @@ async function loadDecks(): Promise<Deck[]> {
   const res = await fetch(VOCAB_URL);
   if (!res.ok) throw new Error(`Failed to load vocab: ${res.status}`);
   const words = (await res.json()) as VocabWord[];
-  cachedDecks = buildDecks(mergeAspectPairs(words));
+  const content = words.filter((w) => !isFillerWord(w));
+  cachedDecks = buildDecks(mergeAspectPairs(content));
   return cachedDecks;
 }
 
@@ -34,7 +35,7 @@ export function renderFlashcards(container: HTMLElement): void {
   const header = document.createElement('div');
   header.innerHTML = `
     <div class="page-title">Flashcards</div>
-    <div class="page-subtitle">The 1000 most common Russian words, in frequency order. Spaced repetition keeps due cards coming back at the right time.</div>
+    <div class="page-subtitle">The most common Russian words by frequency — grammatical filler removed so you drill real vocabulary. Spaced repetition keeps due cards coming back at the right time.</div>
   `;
   container.appendChild(header);
 
