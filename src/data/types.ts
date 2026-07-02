@@ -101,6 +101,18 @@ export interface VocabWord {
   readonly pf?: string;
 }
 
+/** One row of the textbook «Видовые пары глаголов» chart. */
+export interface AspectPair {
+  readonly id: string;
+  /** Imperfective form (chart's left column) — the card front. */
+  readonly impf: string;
+  /** Perfective form (chart's middle column) — the card back. */
+  readonly pf: string;
+  readonly english: string;
+  /** How the perfective is formed (chart's «способ образования» column). */
+  readonly formation: string;
+}
+
 export type Direction = 'ru-en' | 'en-ru';
 
 export type Grade = 'again' | 'hard' | 'good' | 'easy';

@@ -865,6 +865,23 @@ body {
   gap: 10px;
 }
 
+.deck-section-header {
+  margin-top: 24px;
+  margin-bottom: 12px;
+}
+
+.deck-section-title {
+  font-size: 17px;
+  font-weight: 800;
+  margin-bottom: 2px;
+}
+
+.deck-section-subtitle {
+  font-size: 13px;
+  color: var(--color-text-muted);
+  line-height: 1.5;
+}
+
 .deck-card {
   position: relative;
   display: flex;

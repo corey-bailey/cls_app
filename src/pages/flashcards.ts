@@ -1,7 +1,9 @@
 import type { Deck } from '../data/decks.ts';
 import { buildDecks, mergeAspectPairs, isFillerWord } from '../data/decks.ts';
-import type { Direction, Grade, VocabWord } from '../data/types.ts';
-import { renderFlashcard } from '../components/flashcard.ts';
+import type { AspectDeck } from '../data/aspect-pairs.ts';
+import { ASPECT_DECKS, pairKey } from '../data/aspect-pairs.ts';
+import type { AspectPair, Direction, Grade, VocabWord } from '../data/types.ts';
+import { renderFlashcard, renderAspectFlashcard } from '../components/flashcard.ts';
 import {
   wordKey,
   isScheduleDue,
@@ -49,12 +51,27 @@ export function renderFlashcards(container: HTMLElement): void {
     });
 }
 
+/** A deck-grid tile showing label, learned progress, and the due badge. */
+function deckButton(label: string, keys: readonly string[], total: number): HTMLButtonElement {
+  const today = new Date();
+  const store = getStore();
+  const due = dueCount(keys, today, store);
+  const learned = learnedCount(keys, store);
+
+  const btn = document.createElement('button');
+  btn.className = 'deck-card';
+  btn.innerHTML = `
+    <div class="deck-label">${label}</div>
+    <div class="deck-progress">${learned}/${total} learned</div>
+    ${due > 0 ? `<span class="deck-due-badge">${due} due</span>` : `<span class="deck-done-badge">✓</span>`}
+  `;
+  return btn;
+}
+
 function renderDeckList(body: HTMLElement, decks: readonly Deck[]): void {
   stopSpeaking();
   body.innerHTML = '';
-  const today = new Date();
   const direction = getDirection();
-  const store = getStore();
 
   // Labeled direction toggle (reuses the filter-pill styling).
   const toggle = document.createElement('div');
@@ -75,21 +92,31 @@ function renderDeckList(body: HTMLElement, decks: readonly Deck[]): void {
 
   for (const deck of decks) {
     const keys = deck.words.map((w) => wordKey(w.rank));
-    const due = dueCount(keys, today, store);
-    const learned = learnedCount(keys, store);
-
-    const btn = document.createElement('button');
-    btn.className = 'deck-card';
-    btn.innerHTML = `
-      <div class="deck-label">${deck.label}</div>
-      <div class="deck-progress">${learned}/${deck.words.length} learned</div>
-      ${due > 0 ? `<span class="deck-due-badge">${due} due</span>` : `<span class="deck-done-badge">✓</span>`}
-    `;
+    const btn = deckButton(deck.label, keys, deck.words.length);
     btn.addEventListener('click', () => startStudy(body, decks, deck, direction));
     grid.appendChild(btn);
   }
 
   body.appendChild(grid);
+
+  // Aspect-pair drill decks from the textbook chart («Видовые пары глаголов»).
+  const aspectHeader = document.createElement('div');
+  aspectHeader.className = 'deck-section-header';
+  aspectHeader.innerHTML = `
+    <div class="deck-section-title">Verb aspect pairs</div>
+    <div class="deck-section-subtitle">The textbook chart as its own drill: imperfective on the front, perfective on the back — grouped by how the perfective is formed.</div>
+  `;
+  body.appendChild(aspectHeader);
+
+  const aspectGrid = document.createElement('div');
+  aspectGrid.className = 'deck-grid';
+  for (const deck of ASPECT_DECKS) {
+    const keys = deck.pairs.map((p) => pairKey(p.id));
+    const btn = deckButton(deck.label, keys, deck.pairs.length);
+    btn.addEventListener('click', () => startAspectStudy(body, decks, deck));
+    aspectGrid.appendChild(btn);
+  }
+  body.appendChild(aspectGrid);
 }
 
 /** Collapsible explainer for how the Again/Hard/Good/Easy ratings work. */
@@ -120,22 +147,54 @@ function directionPills(direction: Direction): string {
   `;
 }
 
-/** Builds the session queue: due cards in frequency order, capped on new cards. */
-function buildQueue(deck: Deck, today: Date): VocabWord[] {
+/** Builds the session queue: due cards in deck order, capped on new cards. */
+function buildQueue<T>(
+  items: readonly T[],
+  keyOf: (item: T) => string,
+  today: Date,
+): T[] {
   const store = getStore();
-  const queue: VocabWord[] = [];
+  const queue: T[] = [];
   let newCount = 0;
-  for (const word of deck.words) {
-    const sched = store[wordKey(word.rank)];
+  for (const item of items) {
+    const sched = store[keyOf(item)];
     if (!sched) {
       if (newCount >= NEW_PER_SESSION) continue;
       newCount++;
-      queue.push(word);
+      queue.push(item);
     } else if (isScheduleDue(sched, today)) {
-      queue.push(word);
+      queue.push(item);
     }
   }
   return queue;
+}
+
+/** "All caught up" state shared by both study flows. */
+function renderDoneState(cardHost: HTMLElement, exitToList: () => void): void {
+  cardHost.innerHTML = `
+    <div class="empty-state">
+      <div class="empty-emoji">🎉</div>
+      <div>Deck complete for now. Come back when cards are due again.</div>
+      <button class="study-back-btn">Back to decks</button>
+    </div>`;
+  cardHost.querySelector('.study-back-btn')!.addEventListener('click', exitToList);
+}
+
+/** Swaps `body` for a study view; returns the exit callback and card host. */
+function buildStudyView(
+  body: HTMLElement,
+  decks: readonly Deck[],
+): { view: HTMLElement; cardHost: HTMLElement; exitToList: () => void } {
+  const view = document.createElement('div');
+  body.replaceWith(view);
+  // Keep a stable reference so we can re-render the deck list on exit.
+  const exitToList = (): void => {
+    const fresh = document.createElement('div');
+    view.replaceWith(fresh);
+    renderDeckList(fresh, decks);
+  };
+  const cardHost = document.createElement('div');
+  return { view, cardHost, exitToList };
 }
 
 function startStudy(
@@ -145,24 +204,15 @@ function startStudy(
   direction: Direction,
 ): void {
   const today = new Date();
-  const queue = buildQueue(deck, today);
+  const queue = buildQueue(deck.words, (w) => wordKey(w.rank), today);
   let currentDirection = direction;
   let currentWord: VocabWord | undefined;
 
-  const view = document.createElement('div');
-  body.replaceWith(view);
-  // Keep a stable reference so we can re-render the deck list on exit.
-  const exitToList = (): void => {
-    const fresh = document.createElement('div');
-    view.replaceWith(fresh);
-    renderDeckList(fresh, decks);
-  };
+  const { view, cardHost, exitToList } = buildStudyView(body, decks);
 
   const bar = document.createElement('div');
   bar.className = 'study-bar';
   view.appendChild(bar);
-
-  const cardHost = document.createElement('div');
   view.appendChild(cardHost);
 
   function paintBar(): void {
@@ -192,13 +242,7 @@ function startStudy(
     cardHost.innerHTML = '';
     const word = currentWord;
     if (!word) {
-      cardHost.innerHTML = `
-        <div class="empty-state">
-          <div class="empty-emoji">🎉</div>
-          <div>Deck complete for now. Come back when cards are due again.</div>
-          <button class="study-back-btn">Back to decks</button>
-        </div>`;
-      cardHost.querySelector('.study-back-btn')!.addEventListener('click', exitToList);
+      renderDoneState(cardHost, exitToList);
       return;
     }
 
@@ -223,4 +267,46 @@ function startStudy(
 
   paintBar();
   next();
+}
+
+function startAspectStudy(body: HTMLElement, decks: readonly Deck[], deck: AspectDeck): void {
+  const today = new Date();
+  const queue = buildQueue(deck.pairs, (p) => pairKey(p.id), today);
+
+  const { view, cardHost, exitToList } = buildStudyView(body, decks);
+
+  // No direction toggle — aspect cards always drill imperfective → perfective.
+  const bar = document.createElement('div');
+  bar.className = 'study-bar';
+  bar.innerHTML = `
+    <button class="study-back">‹ Decks</button>
+    <span class="study-deck-label">Aspect pairs · ${deck.label}</span>
+  `;
+  bar.querySelector('.study-back')!.addEventListener('click', () => {
+    stopSpeaking();
+    exitToList();
+  });
+  view.appendChild(bar);
+  view.appendChild(cardHost);
+
+  function showCard(pair: AspectPair | undefined): void {
+    cardHost.innerHTML = '';
+    if (!pair) {
+      renderDoneState(cardHost, exitToList);
+      return;
+    }
+
+    renderAspectFlashcard(cardHost, {
+      pair,
+      remaining: queue.length + 1,
+      onGrade: (grade: Grade) => {
+        const key = pairKey(pair.id);
+        saveSchedule(key, schedule(getSchedule(key), grade, today));
+        if (grade === 'again') queue.push(pair);
+        showCard(queue.shift());
+      },
+    });
+  }
+
+  showCard(queue.shift());
 }

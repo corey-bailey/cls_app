@@ -1,4 +1,5 @@
-import type { Direction, Grade, VocabWord } from '../data/types.ts';
+import type { AspectPair, Direction, Grade, VocabWord } from '../data/types.ts';
+import { pairKey } from '../data/aspect-pairs.ts';
 import { speak, stopSpeaking, hasTTSSupport } from '../tts.ts';
 import { schedule, getSchedule, wordKey } from '../srs.ts';
 
@@ -6,6 +7,24 @@ interface FlashcardOptions {
   readonly word: VocabWord;
   readonly direction: Direction;
   readonly remaining: number;
+  readonly onGrade: (grade: Grade) => void;
+}
+
+interface AspectFlashcardOptions {
+  readonly pair: AspectPair;
+  readonly remaining: number;
+  readonly onGrade: (grade: Grade) => void;
+}
+
+/** The shared flip-and-grade card shell; faces are prebuilt HTML. */
+interface CardShellOptions {
+  readonly promptHtml: string;
+  readonly answerHtml: string;
+  /** SRS key used to compute the per-grade interval hints. */
+  readonly srsKey: string;
+  readonly remaining: number;
+  /** Auto-play the answer side's first audio button on flip. */
+  readonly autoSpeakAnswer: boolean;
   readonly onGrade: (grade: Grade) => void;
 }
 
@@ -80,10 +99,19 @@ function englishBlock(word: VocabWord): string {
   return `<div class="flashcard-word">${escapeHtml(word.english)}</div>`;
 }
 
+/** One face of an aspect-pair drill card: aspect label + the verb + audio. */
+function aspectFace(label: string, form: string): string {
+  return `
+    <div class="flashcard-pair-label">${label}</div>
+    <div class="flashcard-word">${escapeHtml(form)}</div>
+    ${audioButton(form)}
+  `;
+}
+
 /** Human-readable "when you'll next see this card" label for a grade button. */
-function intervalHint(grade: Grade, word: VocabWord, today: Date): string {
+function intervalHint(grade: Grade, srsKey: string, today: Date): string {
   if (grade === 'again') return 'soon';
-  const days = schedule(getSchedule(wordKey(word.rank)), grade, today).intervalDays;
+  const days = schedule(getSchedule(srsKey), grade, today).intervalDays;
   if (days <= 1) return '1 day';
   if (days < 30) return `${days} days`;
   const months = Math.round(days / 30);
@@ -91,15 +119,13 @@ function intervalHint(grade: Grade, word: VocabWord, today: Date): string {
 }
 
 /**
- * Renders a single study card. The Russian side gets an audio button (Web
- * Speech ru-RU). Tap/space flips to the back, which reveals the answer and the
- * four SM-2 grade buttons. `onGrade` advances the queue.
+ * Renders the shared study-card shell: counter, tappable flip card, and the
+ * four SM-2 grade buttons. Audio buttons inside either face are wired to Web
+ * Speech (ru-RU). `onGrade` advances the queue.
  */
-export function renderFlashcard(container: HTMLElement, opts: FlashcardOptions): void {
-  const { word, direction, remaining, onGrade } = opts;
+function renderCardShell(container: HTMLElement, opts: CardShellOptions): void {
+  const { promptHtml, answerHtml, srsKey, remaining, autoSpeakAnswer, onGrade } = opts;
   stopSpeaking();
-
-  const promptRussian = direction === 'ru-en';
 
   const wrap = document.createElement('div');
   wrap.className = 'flashcard-wrap';
@@ -108,19 +134,17 @@ export function renderFlashcard(container: HTMLElement, opts: FlashcardOptions):
     <div class="flashcard-counter">${remaining} left</div>
     <div class="flashcard" role="button" tabindex="0" aria-label="Show answer">
       <div class="flashcard-side flashcard-prompt">
-        ${promptRussian ? russianBlock(word) : englishBlock(word)}
+        ${promptHtml}
         <div class="flashcard-hint">Tap to reveal</div>
       </div>
       <div class="flashcard-side flashcard-answer" hidden>
-        ${promptRussian ? englishBlock(word) : russianBlock(word)}
-        <div class="flashcard-meta">${metaLine(word)}</div>
-        <div class="flashcard-footer">#${word.rank} most common</div>
+        ${answerHtml}
       </div>
     </div>
     <div class="grade-buttons" hidden>
       ${GRADES.map((g) => `<button class="grade-btn ${g.cls}" data-grade="${g.grade}">
         <span class="grade-label">${g.label}</span>
-        <span class="grade-interval">${intervalHint(g.grade, word, new Date())}</span>
+        <span class="grade-interval">${intervalHint(g.grade, srsKey, new Date())}</span>
       </button>`).join('')}
     </div>
   `;
@@ -156,9 +180,7 @@ export function renderFlashcard(container: HTMLElement, opts: FlashcardOptions):
     answerSide.hidden = false;
     grades.hidden = false;
     card.setAttribute('aria-label', 'Card revealed');
-    // Auto-play the Russian audio when it lands on the answer side. For an
-    // aspect pair this is the imperfective (first) form.
-    if (!promptRussian && hasTTSSupport()) {
+    if (autoSpeakAnswer && hasTTSSupport()) {
       const btn = answerSide.querySelector<HTMLButtonElement>('.flashcard-audio');
       if (btn) playText(btn.dataset.speak ?? '', btn);
     }
@@ -180,4 +202,52 @@ export function renderFlashcard(container: HTMLElement, opts: FlashcardOptions):
   });
 
   container.appendChild(wrap);
+}
+
+/**
+ * Renders a single vocab study card. The Russian side gets an audio button;
+ * tap/space flips to the back with the answer and grade buttons. For en→ru the
+ * Russian answer auto-plays on flip (an aspect pair speaks its imperfective).
+ */
+export function renderFlashcard(container: HTMLElement, opts: FlashcardOptions): void {
+  const { word, direction, remaining, onGrade } = opts;
+  const promptRussian = direction === 'ru-en';
+
+  renderCardShell(container, {
+    promptHtml: promptRussian ? russianBlock(word) : englishBlock(word),
+    answerHtml: `
+      ${promptRussian ? englishBlock(word) : russianBlock(word)}
+      <div class="flashcard-meta">${metaLine(word)}</div>
+      <div class="flashcard-footer">#${word.rank} most common</div>
+    `,
+    srsKey: wordKey(word.rank),
+    remaining,
+    autoSpeakAnswer: !promptRussian,
+    onGrade,
+  });
+}
+
+/**
+ * Renders an aspect-pair drill card: imperfective on the front, perfective on
+ * the back, with the textbook's formation rule and the English gloss as the
+ * answer-side metadata. The perfective auto-plays on flip.
+ */
+export function renderAspectFlashcard(
+  container: HTMLElement,
+  opts: AspectFlashcardOptions,
+): void {
+  const { pair, remaining, onGrade } = opts;
+
+  renderCardShell(container, {
+    promptHtml: aspectFace('imperfective', pair.impf),
+    answerHtml: `
+      ${aspectFace('perfective', pair.pf)}
+      <div class="flashcard-meta">${escapeHtml(pair.english)} · ${escapeHtml(pair.formation)}</div>
+      <div class="flashcard-footer">видовая пара</div>
+    `,
+    srsKey: pairKey(pair.id),
+    remaining,
+    autoSpeakAnswer: true,
+    onGrade,
+  });
 }
