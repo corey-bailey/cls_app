@@ -101,6 +101,18 @@ export interface VocabWord {
   readonly pf?: string;
 }
 
+/** One noun/object from the Урок 12 «Пары глаголов НСВ — СВ» chart. */
+export interface LessonNoun {
+  readonly id: string;
+  /** Dictionary (nominative) form with stress marks — the card front. */
+  readonly russian: string;
+  readonly english: string;
+  /** The chart collocation: the verb pair this noun appears with. */
+  readonly usage: string;
+  /** Gender/number note when it isn't obvious from the ending. */
+  readonly note?: string;
+}
+
 /** One row of the textbook «Видовые пары глаголов» chart. */
 export interface AspectPair {
   readonly id: string;

@@ -2,8 +2,10 @@ import type { Deck } from '../data/decks.ts';
 import { buildDecks, mergeAspectPairs, isFillerWord } from '../data/decks.ts';
 import type { AspectDeck } from '../data/aspect-pairs.ts';
 import { ASPECT_DECKS, pairKey } from '../data/aspect-pairs.ts';
-import type { AspectPair, Direction, Grade, VocabWord } from '../data/types.ts';
-import { renderFlashcard, renderAspectFlashcard } from '../components/flashcard.ts';
+import type { NounDeck } from '../data/lesson-nouns.ts';
+import { NOUN_DECKS, nounKey } from '../data/lesson-nouns.ts';
+import type { AspectPair, Direction, Grade, LessonNoun, VocabWord } from '../data/types.ts';
+import { renderFlashcard, renderAspectFlashcard, renderNounFlashcard } from '../components/flashcard.ts';
 import {
   wordKey,
   isScheduleDue,
@@ -117,6 +119,25 @@ function renderDeckList(body: HTMLElement, decks: readonly Deck[]): void {
     aspectGrid.appendChild(btn);
   }
   body.appendChild(aspectGrid);
+
+  // Noun decks from the same chart — each row's object, drilled as vocabulary.
+  const nounHeader = document.createElement('div');
+  nounHeader.className = 'deck-section-header';
+  nounHeader.innerHTML = `
+    <div class="deck-section-title">Nouns · Уро́к 12</div>
+    <div class="deck-section-subtitle">The objects from the verb chart, drilled as plain vocabulary. The back of each card shows the collocation — which verb pair the noun goes with. Uses the RU ↔ EN toggle above.</div>
+  `;
+  body.appendChild(nounHeader);
+
+  const nounGrid = document.createElement('div');
+  nounGrid.className = 'deck-grid';
+  for (const deck of NOUN_DECKS) {
+    const keys = deck.nouns.map((n) => nounKey(n.id));
+    const btn = deckButton(deck.label, keys, deck.nouns.length);
+    btn.addEventListener('click', () => startNounStudy(body, decks, deck, direction));
+    nounGrid.appendChild(btn);
+  }
+  body.appendChild(nounGrid);
 }
 
 /** Collapsible explainer for how the Again/Hard/Good/Easy ratings work. */
@@ -262,6 +283,77 @@ function startStudy(
 
   function next(): void {
     currentWord = queue.shift();
+    showCard();
+  }
+
+  paintBar();
+  next();
+}
+
+function startNounStudy(
+  body: HTMLElement,
+  decks: readonly Deck[],
+  deck: NounDeck,
+  direction: Direction,
+): void {
+  const today = new Date();
+  const queue = buildQueue(deck.nouns, (n) => nounKey(n.id), today);
+  let currentDirection = direction;
+  let currentNoun: LessonNoun | undefined;
+
+  const { view, cardHost, exitToList } = buildStudyView(body, decks);
+
+  const bar = document.createElement('div');
+  bar.className = 'study-bar';
+  view.appendChild(bar);
+  view.appendChild(cardHost);
+
+  function paintBar(): void {
+    bar.innerHTML = `
+      <button class="study-back">‹ Decks</button>
+      <span class="study-deck-label">${deck.label}</span>
+      <div class="study-direction">${directionPills(currentDirection)}</div>
+    `;
+    bar.querySelector('.study-back')!.addEventListener('click', () => {
+      stopSpeaking();
+      exitToList();
+    });
+    bar.querySelector('.study-direction')!.addEventListener('click', (e) => {
+      const target = (e.target as HTMLElement).closest<HTMLButtonElement>('.filter-pill');
+      if (!target) return;
+      const dir = target.dataset.dir as Direction;
+      if (dir === currentDirection) return;
+      currentDirection = dir;
+      setDirection(dir);
+      paintBar();
+      showCard(); // re-render the current card in the new direction
+    });
+  }
+
+  /** Renders whatever `currentNoun` is (or the done state) — does not advance. */
+  function showCard(): void {
+    cardHost.innerHTML = '';
+    const noun = currentNoun;
+    if (!noun) {
+      renderDoneState(cardHost, exitToList);
+      return;
+    }
+
+    renderNounFlashcard(cardHost, {
+      noun,
+      direction: currentDirection,
+      remaining: queue.length + 1,
+      onGrade: (grade: Grade) => {
+        const key = nounKey(noun.id);
+        saveSchedule(key, schedule(getSchedule(key), grade, today));
+        if (grade === 'again') queue.push(noun);
+        next();
+      },
+    });
+  }
+
+  function next(): void {
+    currentNoun = queue.shift();
     showCard();
   }
 
