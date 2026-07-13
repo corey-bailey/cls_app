@@ -1029,14 +1029,6 @@ body {
   font-weight: 600;
 }
 
-/* The chart collocation on the back of a noun card, e.g. «включа́ть / включи́ть магнитофо́н». */
-.flashcard-usage {
-  font-size: 15px;
-  color: var(--color-text-muted);
-  line-height: 1.5;
-  overflow-wrap: anywhere;
-}
-
 .flashcard-pair {
   display: flex;
   flex-direction: column;

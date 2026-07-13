@@ -1,6 +1,5 @@
-import type { AspectPair, Direction, Grade, LessonNoun, VocabWord } from '../data/types.ts';
+import type { AspectPair, Direction, Grade, VocabWord } from '../data/types.ts';
 import { pairKey } from '../data/aspect-pairs.ts';
-import { nounKey } from '../data/lesson-nouns.ts';
 import { speak, stopSpeaking, hasTTSSupport } from '../tts.ts';
 import { schedule, getSchedule, wordKey } from '../srs.ts';
 
@@ -13,13 +12,6 @@ interface FlashcardOptions {
 
 interface AspectFlashcardOptions {
   readonly pair: AspectPair;
-  readonly remaining: number;
-  readonly onGrade: (grade: Grade) => void;
-}
-
-interface NounFlashcardOptions {
-  readonly noun: LessonNoun;
-  readonly direction: Direction;
   readonly remaining: number;
   readonly onGrade: (grade: Grade) => void;
 }
@@ -229,33 +221,6 @@ export function renderFlashcard(container: HTMLElement, opts: FlashcardOptions):
       <div class="flashcard-footer">#${word.rank} most common</div>
     `,
     srsKey: wordKey(word.rank),
-    remaining,
-    autoSpeakAnswer: !promptRussian,
-    onGrade,
-  });
-}
-
-/**
- * Renders a lesson-noun study card. Same RU↔EN direction behavior as vocab
- * cards; the answer side adds the chart collocation so the noun stays tied to
- * the verbs it appears with.
- */
-export function renderNounFlashcard(container: HTMLElement, opts: NounFlashcardOptions): void {
-  const { noun, direction, remaining, onGrade } = opts;
-  const promptRussian = direction === 'ru-en';
-  const russianHtml = `<div class="flashcard-word">${escapeHtml(noun.russian)}</div>${audioButton(noun.russian)}`;
-  const englishHtml = `<div class="flashcard-word">${escapeHtml(noun.english)}</div>`;
-  const meta = noun.note ? `noun · ${noun.note}` : 'noun';
-
-  renderCardShell(container, {
-    promptHtml: promptRussian ? russianHtml : englishHtml,
-    answerHtml: `
-      ${promptRussian ? englishHtml : russianHtml}
-      <div class="flashcard-meta">${escapeHtml(meta)}</div>
-      <div class="flashcard-usage">${escapeHtml(noun.usage)}</div>
-      <div class="flashcard-footer">Уро́к 12</div>
-    `,
-    srsKey: nounKey(noun.id),
     remaining,
     autoSpeakAnswer: !promptRussian,
     onGrade,
